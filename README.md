@@ -59,6 +59,7 @@ First I'll be explaing what all things are required
 [Visual Studio Code](https://code.visualstudio.com/download)
 
 ◙ Then first to install the packages open a terminal in visual studio code type `npm install`
+
 ![terminal](https://user-images.githubusercontent.com/45940386/111021871-b22ee080-83e8-11eb-92cb-c2ff2ccc7b3f.png)
 
 ◙ Then after the packages and intalled and things are been configured in the `config.json`
