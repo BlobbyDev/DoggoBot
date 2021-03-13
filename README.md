@@ -2,6 +2,10 @@
 
 A cool multi purpose bot with some fun commands
 
+[Add It](https://discord.com/api/oauth2/authorize?client_id=818092139496996864&permissions=8&scope=bot) | [Join Our Discord](https://discord.gg/RWSEj6JrjJ)
+
+[![DiscordBanner](https://invidget.switchblade.xyz/RWSEj6JrjJ)](https://discord.gg/RWSEj6JrjJ)
+
 ## How to setup 
 
 ### Creating a Bot and adding to your server
@@ -44,7 +48,7 @@ Please replace theses text !!
 }
 ```
 
-I you need to change the emojis go to `emoji.json` and change it I recommend the value to be same as it is
+If you need to change the emojis go to `emoji.json` and change it I recommend the value to be same as it is
 
 ## Starting the Bot
 
