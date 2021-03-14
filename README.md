@@ -32,7 +32,7 @@ And now you got the token !!!
 
 Go to config.json in the repo then do as I say
 
-**config.json**
+Go to `config.json`
 
 Please replace theses text !!
 
@@ -40,11 +40,24 @@ Please replace theses text !!
 {
     "Token": "Replace with your bot's token that I just explained how to obtain",
     "YT": "YT API key if you don't need to youtube command then no need to put the API key",
-    "ServerLogsChannel": "Channel ID of the channel that your need to post the  guild's details if it joins a guild",
+    "IMBD": "IMBD api key for the movie command"
     "Prefix": "The prefix that you need for your bot",
     "Owner": "You ID",
     "Invite": "You bot's invite link that we just explained how to obtain",
     "Server": "Your bot's support server"
+}
+```
+
+**Channel Setup**
+
+go to `channels.json`
+
+```js
+{
+    "ServerLogs": "ID of channel that you wann receive the bot's server logs",
+    "Feeback": "ID of the channel that you wanna get the feedback of the bot",
+    "Report": "Id of the channel that you wann get the reports of the bot",
+    "Suggestion": "ID of the channel that you wanna get the duggestions of the bot"
 }
 ```
 
