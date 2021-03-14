@@ -105,6 +105,7 @@ First I'll be explaing what all things are required
 | Coinflip | Flips a coin for you | !!coinflip | !!coinflip | toss
 | Roll | Rolls die for you | !!roll | !!roll | dice 
 | Trumptweet | Converts you text to trump's tweet lol | !!trumptweet [message] | !!trumptweet Hi | tt
+| Tictactoe | To play tic tac toe with the mentioned user | !!tictactoe [user] | !!tictactoe @Dinav | ttt
 
 ## Utility 
 
@@ -118,6 +119,7 @@ First I'll be explaing what all things are required
 | Youtube | Searches youtube for you | !!youtube [query] | !!youtube closer | yt
 | Embed | Echos your message in embed | !!embed [text] | !!embed Hi | -
 | Translate | Translates your word to the provided language | !!translate [language that you need the meaning] [Word] | !!translate spanish Hi | t
+| Movie | Gived the info of the provided movie | !!movie [movie name] | !!movie avengers endgame | -
 
 ## Image 
 | Name | Description | Usage | Example | Aliases
@@ -141,6 +143,8 @@ First I'll be explaing what all things are required
 | Whois | Gives the information of the user which is mentioned or provided ID | !!userinfo [Mention or ID] | !!userinfo @Dinav | ui, userinfo 
 | Ping | Gives the latency and API latency of the bot | !!ping | !!ping | ms, latency
 | Uptime | Gives the uptime of the bot | !!uptime | !!uptime | ut
+| Channelinfo | Gives the info of the provided channel | !!channel info [channel] | !!channelinfo #general | channel
+| Roleinfo | Gives the info of the provided role or role id | !!roleinfo [role] | !!roleinfo @Mod | role
 
 ## Others 
 | Name | Description | Usage | Exampe | Aliases
