@@ -1,5 +1,7 @@
 # Doggo
 
+![Image](https://cdn.discordapp.com/avatars/818092139496996864/731e9b139afa1a50c23d946c8b235761.webp?size=1024)
+
 A cool multi purpose bot with some fun commands
 
 [Add It](https://discord.com/api/oauth2/authorize?client_id=818092139496996864&permissions=8&scope=bot) | [Join Our Discord](https://discord.gg/RWSEj6JrjJ)
