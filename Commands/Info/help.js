@@ -22,7 +22,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
 
         .setTitle(`${client.user.username}'s Commands`)
-        .setDescription(`These are the commands of ${client.user.username} if you want to get more details of a command type \`!!help [command name]\``)
+        .setDescription(`These are the commands of ${client.user.username} if you want to get more details of a command type \`${config.Prefix} [command name]\``)
         .addField(`${emoji.Fun} Fun`, Fun, true)
         .addField(`${emoji.Info} Info`, Info, true)
         .addField(`${emoji.Moderation} Moderation`, Moderation, true)
