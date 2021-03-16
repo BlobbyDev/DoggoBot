@@ -10,7 +10,7 @@ module.exports = async (client, message) => {
     const embed = new Discord.MessageEmbed()
     .setTitle('Did you ping me ??')
     .setThumbnail(client.user.displayAvatarURL({dynamic: true, size: 1024}))
-    .setDescription(`Aight I'm ${client.user.username} I'm a multi purpose bot my prefix is \`!!\` try \`!!help\` to get to know me more\n\n[Add Me](${config.Invite}) | [Join Server](${config.Server})`)
+    .setDescription(`Aight I'm ${client.user.username} I'm a multi purpose bot my prefix is \`${config.Prefix}\` try \`${config.Prefix}help\` to get to know me more\n\n[Add Me](${config.Invite}) | [Join Server](${config.Server})`)
     .setTimestamp()
 
      message.channel.send(embed)
@@ -20,7 +20,7 @@ module.exports = async (client, message) => {
     const embed = new Discord.MessageEmbed()
     .setTitle('Did you ping me ??')
     .setThumbnail(client.user.displayAvatarURL({dynamic: true, size: 1024}))
-    .setDescription(`Aight I'm ${client.user.username} I'm a multi purpose bot my prefix is \`!!\` try \`!!help\` to get to know me more\n\n[Add Me](${config.Invite}) | [Join Server](${config.Server})`)
+    .setDescription(`Aight I'm ${client.user.username} I'm a multi purpose bot my prefix is \`${config.Prefix}\` try \`${config}help\` to get to know me more\n\n[Add Me](${config.Invite}) | [Join Server](${config.Server})`)
     .setTimestamp()
 
     message.channel.send(embed)
