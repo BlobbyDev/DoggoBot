@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const config = require('../../config.json');
-const emoji = require('../../config.json');
+const emoji = require('../../Utils/emoji.json');
 const log = require('../../Utils/channels.json');
 
 module.exports = {
