@@ -42,7 +42,7 @@ module.exports = {
         .addField(`${emoji.Prefix} Prefix`, `\`\`\`${config.Prefix}\`\`\``, true)
         .addField(`${emoji.BotDev} Developer`, `\`\`\`Dinav#6969 | ${config.Owner}\`\`\``, true)
         .addField(`${emoji.Uptime} Uptime`, `\`\`\`${Uptime}\`\`\``, true)
-        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server})`)
+        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
         message.channel.send(embed)
