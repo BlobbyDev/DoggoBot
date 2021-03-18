@@ -1,6 +1,4 @@
 # Doggo
- <img src="https://cdn.discordapp.com/attachments/809031839032672327/821947849490300948/731e9b139afa1a50c23d946c8b235761_1.png" align="right", width='50px'/>
-</div>
 
 A cool multi purpose bot with some fun commands
 
