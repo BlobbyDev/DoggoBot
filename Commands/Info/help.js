@@ -13,7 +13,7 @@ module.exports = {
         const Fun = "```8ball, Ascii, PP, Rps, Coinflip, Roll, Tictactoe, Simprate, Gayrate, Trumptweet```";
         const Info = "```Help, Ping, Serverinfo, Uptime, Whois, Channelinfo, Roleinfo, Servericon, Policy```";
         const Moderation = "```Ban, Kick, Unban, Forceban, Slowmode, Clear, Addrole, Removerole, Nickname```";
-        const Utility = "```Avatar, Covid, Embed, Say, Urban, Weather, Translate, Youtube, Calculate, Spotify, ```";
+        const Utility = "```Avatar, Covid, Embed, Say, Urban, Weather, Translate, Youtube, Calculate, Spotify, qr```";
         const Image = "```Meme, Dog, Fox, Bird, Cat, Panda, RedPanda, Koala, Shibe```";
         const Fact = "```Catfact, Dogfact, Pandafact, Birdfact, Foxfact, Koalafact```";
         const Others = "```Invite, Support, Github```";
@@ -31,7 +31,7 @@ module.exports = {
         .addField(`${emoji.Facts} Fact`, Fact, true)
         .addField(`${emoji.Wink} Others`, Others, true)
         .addField(`${emoji.Misc} Misc`, Misc, true)
-        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server})`)
+        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
         
