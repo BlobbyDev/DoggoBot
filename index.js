@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const config = require('./config.json');
-const client = new Discord.Client( { ws: { properties: { $browser: "Discord iOS" }} } );
+const client = new Discord.Client();
 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
