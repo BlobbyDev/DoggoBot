@@ -18,6 +18,7 @@ const region = {
     'india': `${emoji.flagIndia} \`India\``,
     'europe': `${emoji.flagEurope} \`Europe\``
 };
+
 const verificationLevels = {
     NONE: '`None`',
     LOW: '`Low`',
@@ -25,11 +26,13 @@ const verificationLevels = {
     HIGH: '`High`',
     VERY_HIGH: '`Very High`'
 };
+
 const notifications = {
     ALL: '`All`',
     MENTIONS: '`Mentions`'
 };
- module.exports = {
+
+module.exports = {
     name: "serverinfo",
     aliases: ["server", "si"],
     category: "Info",
@@ -44,6 +47,7 @@ const notifications = {
     const offline =  members.filter((m) => m.presence.status === 'offline').length;
     const dnd =  members.filter((m) => m.presence.status === 'dnd').length;
     const afk =  members.filter((m) => m.presence.status === 'idle').length;
+    const streaming =  members.filter((m) => m.presence.status === 'streaming').length;
     const bots = members.filter(b => b.user.bot).length;
     const humans = memberCount - bots
     
@@ -77,10 +81,10 @@ const notifications = {
     .addField('Partnered', `\`${message.guild.partnered}\``, true)
     .addField('Verified', `\`${message.guild.verified}\``, true)
     .addField('Default Notifications', notifications[message.guild.defaultMessageNotifications], true)
-    .addField('AFK Channel', (message.guild.afkChannel) ? `\`${message.guild.afkChannel.name}\`` : '`None`', true)
+    .addField('AFK Channel', (message.guild.afkChannel) ? `\`${message.guild.afkChannel.name}\` | \`${message.guild.afkChannel.id}\`` : '`None`', true)
     .addField('AFK Timeout', (message.guild.afkChannel) ? `\`${moment.duration(message.guild.afkTimeout * 1000).asMinutes()} minutes\`` : '`None`', true)
     .addField('Channel Counts', `\`${channelCount}\` Total Channels || ${emoji.TextChannnel}\`${textChannels}\` | ${emoji.VoiceChannel}\`${voiceChannels}\` | ${emoji.AnnouncementChannel}\`${newsChannels}\` | ${emoji.StoreChannel}\`${storeChannel}\``)
-    .addField('User Status', `\`${online}\`${emoji.Online}  \`${afk}\`${emoji.Idle}  \`${dnd}\`${emoji.Dnd}  \`${offline}\`${emoji.Offline}`)
+    .addField('User Status', `\`${online}\`${emoji.Online}  \`${afk}\`${emoji.Idle}  \`${dnd}\`${emoji.Dnd}  \`${offline}\`${emoji.Offline} \`${streaming}\`${emoji.Streaming}`)
     .setFooter(`Requested by ${message.member.displayName}`, message.author.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
 
