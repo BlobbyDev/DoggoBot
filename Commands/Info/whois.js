@@ -68,7 +68,7 @@ module.exports = {
             embed.addField('Badges', `\`No Badge\``, true)
             if (userFlags.length > 0)
             embed.addField('Badges', userFlags.map(flag => badges[flag]), true)
-            .setFooter(`Requested by ${message.author.displayName}`, message.author.displayAvatarURL({dynamic: true}))
+            .setFooter(`Requested by ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
         
             if (member.user.presence.game) 
             embed.addField('Currently playing', stripIndents`** Name:** ${member.user.presence.game.name}`);
