@@ -32,20 +32,20 @@ module.exports = {
         }
 
         const badges = {
-            DISCORD_EMPLOYEE: `${emoji.DiscordStaff} \`Discord Staff\``,
-            DISCORD_PARTNER: `${emoji.DiscordPartner} \`Partnered Server Owner\``,
-            BUGHUNTER_LEVEL_1: `${emoji.DiscordBugHunter} \`Bug Hunter (Level 1)\``,
-            BUGHUNTER_LEVEL_2: `${emoji.DiscordBugHunter2} \`Bug Hunter (Level 2)\``,
-            HYPESQUAD_EVENTS: `${emoji.HypesqaudEvents} \`HypeSquad Events\``,
-            HOUSE_BRAVERY: `${emoji.HypesquadBravery} \`House of Bravery\``,
-            HOUSE_BRILLIANCE: `${emoji.HypesquadBrilliance} \`House of Brilliance\``,
-            HOUSE_BALANCE: `${emoji.HypesquadBalance} \`House of Balance\``,
-            EARLY_SUPPORTER: `${emoji.EarlySupporter} \`Early Supporter\``,
+            DISCORD_EMPLOYEE: `${emoji.DiscordStaff}`,
+            DISCORD_PARTNER: `${emoji.DiscordPartner}`,
+            BUGHUNTER_LEVEL_1: `${emoji.DiscordBugHunter}`,
+            BUGHUNTER_LEVEL_2: `${emoji.DiscordBugHunter2}`,
+            HYPESQUAD_EVENTS: `${emoji.HypesqaudEvents}`,
+            HOUSE_BRAVERY: `${emoji.HypesquadBravery}`,
+            HOUSE_BRILLIANCE: `${emoji.HypesquadBrilliance}`,
+            HOUSE_BALANCE: `${emoji.HypesquadBalance}`,
+            EARLY_SUPPORTER: `${emoji.EarlySupporter}`,
             TEAM_USER: '`Team User`',
             SYSTEM: '`System`',
-            VERIFIED_BOT: `${emoji.VerifiedBot} \`Verified Bot\``,
-            VERIFIED_DEVELOPER: `${emoji.BotDev} \`Early Verified Bot Developer\``,
-            BOT: `${emoji.Bot} \`Bot\``
+            VERIFIED_BOT: `${emoji.VerifiedBot}`,
+            VERIFIED_DEVELOPER: `${emoji.BotDev}`,
+            BOT: `${emoji.Bot}`
         }
     
         const flags = await member.user.fetchFlags()
@@ -63,11 +63,11 @@ module.exports = {
             .addField('Joined Discord At', `\`${moment.utc(member.user.createdAt).format('DD/MMM/YYYY')}\``,true)
             .addField('Highest Role', `${roles}`, true)
             .addField('User Status', status[member.presence.status], true)
+            .addField('Bot User', bot[member.user.bot], true)
             if (userFlags.length <= 0)
             embed.addField('Badges', `\`No Badge\``, true)
             if (userFlags.length > 0)
-            embed.addField('Badges', userFlags.map(flag => badges[flag]).join('\n'), true)
-            .addField('Bot ?', bot[member.user.bot], true)
+            embed.addField('Badges', userFlags.map(flag => badges[flag]), true)
             .setFooter(`Requested by ${message.author.displayName}`, message.author.displayAvatarURL({dynamic: true}))
         
             if (member.user.presence.game) 
