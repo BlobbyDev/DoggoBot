@@ -77,10 +77,10 @@ const notifications = {
     .addField('Partnered', `\`${message.guild.partnered}\``, true)
     .addField('Verified', `\`${message.guild.verified}\``, true)
     .addField('Default Notifications', notifications[message.guild.defaultMessageNotifications], true)
-    .addField('AFK Channel', (message.guild.afkChannel) ? `${voice} <#${message.guild.afkChannel.id}>` : '`None`', true)
+    .addField('AFK Channel', (message.guild.afkChannel) ? `\`${message.guild.afkChannel.name}\` | \`${message.guild.afkChannel.id}\`` : '`None`', true)
     .addField('AFK Timeout', (message.guild.afkChannel) ? `\`${moment.duration(message.guild.afkTimeout * 1000).asMinutes()} minutes\`` : '`None`', true)
-    .addField('User Status', `\`${online}\`${emoji.Online}  \`${afk}\`${emoji.Idle}  \`${dnd}\`${emoji.Dnd}  \`${offline}\`${emoji.Offline}`, true)
-    .addField('Channel Counts', `\`${channelCount}\` Total Channels\n${emoji.TextChannnel}\`${textChannels}\` ${emoji.VoiceChannel}\`${voiceChannels}\` ${emoji.AnnouncementChannel}\`${newsChannels}\` ${emoji.StoreChannel}\`${storeChannel}\``,true)
+    .addField('Channel Counts', `\`${channelCount}\` Total Channels || ${emoji.TextChannnel}\`${textChannels}\` | ${emoji.VoiceChannel}\`${voiceChannels}\` | ${emoji.AnnouncementChannel}\`${newsChannels}\` | ${emoji.StoreChannel}\`${storeChannel}\` | ${emoji.Category} \`${categoryChannels}\``)
+    .addField('User Status', `\`${online}\`${emoji.Online}  \`${afk}\`${emoji.Idle}  \`${dnd}\`${emoji.Dnd}  \`${offline}\`${emoji.Offline}`)
     .setFooter(`Requested by ${message.member.displayName}`, message.author.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
 
