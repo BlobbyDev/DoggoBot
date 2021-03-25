@@ -31,7 +31,7 @@ module.exports = {
         .addField(`${emoji.Facts} Fact`, Fact, true)
         .addField(`${emoji.Wink} Others`, Others, true)
         .addField(`${emoji.Misc} Misc`, Misc, true)
-        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
+        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server})`)
         .setTimestamp()
 
         
