@@ -10,7 +10,7 @@ module.exports = {
     example: `${config.Prefix}help or ${config.Prefix}help botinfo`,
 
     run: async (client, message, args) => {
-        const Fun = "```8ball, Ascii, PP, Rps, Coinflip, Roll, Tictactoe, Simprate, Gayrate, Trumptweet```";
+        const Fun = "```8ball, Ascii, PP, Rps, Coinflip, Roll, Tictactoe, Simprate, Gayrate, Trumptweet, Lesbianrate```";
         const Info = "```Help, Ping, Serverinfo, Uptime, Whois, Channelinfo, Roleinfo, Servericon, Policy```";
         const Moderation = "```Ban, Kick, Unban, Forceban, Slowmode, Clear, Addrole, Removerole, Nickname```";
         const Utility = "```Avatar, Covid, Embed, Say, Urban, Weather, Translate, Youtube, Calculate, Spotify, Qr, Poll```";

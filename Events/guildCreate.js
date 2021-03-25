@@ -7,8 +7,6 @@ const moment = require('moment');
 module.exports =  async (client, guild) => {
 
     const channel = client.channels.cache.get(log.ServerLogs);
-
-    client.user.setActivity(`${config.Prefix}help | ${client.guilds.cache.size} Servers`, {type: "WATCHING"})
       
     const embed = new Discord.MessageEmbed()
     .setThumbnail(guild.iconURL({ dynamic: true, size: 1024}))

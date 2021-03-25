@@ -4,22 +4,23 @@ const emoji = require('../../Utils/emoji.json');
 
 module.exports = {
 
-    name: "gayrate",
-    description: "Gives the gayrate of the user !!",
-    example: `${config.Prefix}gayrate @Dinav`,
+    name: "lesbianrate",
+    aliases: ["lr"],
+    description: "Gives the lesbianrate of the user !!",
+    example: `${config.Prefix}lesbianrate @Dinav`,
 
     run: async (client, message, args) => {
 
         const user =  message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
 
-        const gayrate = Math.floor(Math.random() * 101)
+        const lesbianrate = Math.floor(Math.random() * 101)
 
         if(!user)
         return message.reply(`${emoji.Error} Provide a valid user from this guild !!`)
 
         const embed = new Discord.MessageEmbed()
-        .setTitle(`${emoji.Gay} Gayrate !!`)
-        .setDescription(`${user} (\`${user.user.tag}\`) is ${gayrate} % gay !! ${emoji.Gay}`)
+        .setTitle(`${emoji.Gay} Lesbian rate !!`)
+        .setDescription(`${user} (\`${user.user.tag}\`) is ${lesbianrate} % lesbian !! ${emoji.Lesbian}`)
         .setTimestamp()
 
         message.channel.send(embed)
