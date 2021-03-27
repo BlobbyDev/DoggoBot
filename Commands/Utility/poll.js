@@ -28,7 +28,7 @@ module.exports = {
         .setFooter(`Poll made by ${message.member.displayName}`, message.author.displayAvatarURL({ dynamic: true }))
         .setTimestamp()
 
-        let msgEmbed = await message.channel.send(embedPoll);
+        let msgEmbed = await message.channel.send(embed);
         await msgEmbed.react('👍')
         await msgEmbed.react('👎')
 
