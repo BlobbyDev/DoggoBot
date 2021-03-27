@@ -47,13 +47,12 @@ module.exports = {
     const offline =  members.filter((m) => m.presence.status === 'offline').length;
     const dnd =  members.filter((m) => m.presence.status === 'dnd').length;
     const afk =  members.filter((m) => m.presence.status === 'idle').length;
-    const streaming =  members.filter((m) => m.presence.status === 'streaming').length;
     const bots = members.filter(b => b.user.bot).length;
     const humans = memberCount - bots
     
 
     const channels = message.guild.channels.cache.array();
-    const channelCount = channels.length;
+    const channelCount = channels.length - channels.filter(c => c.type === 'category').length;
     const textChannels = channels.filter(c => c.type === 'text').length;
     const voiceChannels = channels.filter(c => c.type === 'voice').length;
     const newsChannels = channels.filter(c => c.type === 'news').length;
@@ -84,7 +83,7 @@ module.exports = {
     .addField('AFK Channel', (message.guild.afkChannel) ? `\`${message.guild.afkChannel.name}\` | \`${message.guild.afkChannel.id}\`` : '`None`', true)
     .addField('AFK Timeout', (message.guild.afkChannel) ? `\`${moment.duration(message.guild.afkTimeout * 1000).asMinutes()} minutes\`` : '`None`', true)
     .addField('Channel Counts', `\`${channelCount}\` Total Channels || ${emoji.TextChannnel}\`${textChannels}\` | ${emoji.VoiceChannel}\`${voiceChannels}\` | ${emoji.AnnouncementChannel}\`${newsChannels}\` | ${emoji.StoreChannel}\`${storeChannel}\``)
-    .addField('User Status', `\`${online}\`${emoji.Online}  \`${afk}\`${emoji.Idle}  \`${dnd}\`${emoji.Dnd}  \`${offline}\`${emoji.Offline} \`${streaming}\`${emoji.Streaming}`)
+    .addField('User Status', `\`${online}\`${emoji.Online}  \`${afk}\`${emoji.Idle}  \`${dnd}\`${emoji.Dnd}  \`${offline}\`${emoji.Offline}`)
     .setFooter(`Requested by ${message.member.displayName}`, message.author.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
 
