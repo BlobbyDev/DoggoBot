@@ -36,11 +36,16 @@ Go to `config.json`
 
 Please replace theses text !!
 
+Make a `.env` file and then:
+```js
+TOKEN=Replace with your bot's token that I just explained how to obtain
+YT=YouTube API key if you don't need to youtube command then no need to put the API key
+IMBD=IMBD api key for the movie command
+```
+
+Go to `config.json` and then:
 ```js
 {
-    "Token": "Replace with your bot's token that I just explained how to obtain",
-    "YT": "YT API key if you don't need to youtube command then no need to put the API key",
-    "IMBD": "IMBD api key for the movie command"
     "Prefix": "The prefix that you need for your bot",
     "Owner": "You ID",
     "Invite": "You bot's invite link that we just explained how to obtain",
