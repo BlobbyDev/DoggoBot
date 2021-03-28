@@ -38,7 +38,7 @@ Please replace theses text !!
 
 Make a `.env` file and then:
 **Do not put any commas or anything on `.env` file's value !!**
-```js
+```
 TOKEN=Replace with your bot's token that I just explained how to obtain
 YT=YouTube API key if you don't need to youtube command then no need to put the API key
 IMBD=IMBD api key for the movie command
