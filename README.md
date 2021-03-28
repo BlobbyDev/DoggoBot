@@ -26,6 +26,8 @@ A cool multi purpose bot with some fun commands
 
 ◙ Go to bot tab then you'll see `TOKEN` click copy 
 
+◙ Make sure you turn on both the intends in your you'll find that in that bot category !!
+
 And now you got the token !!!
 
 ## Configuring
