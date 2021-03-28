@@ -37,6 +37,7 @@ Go to `config.json`
 Please replace theses text !!
 
 Make a `.env` file and then:
+
 **Do not put any commas or anything on `.env` file's value !!**
 ```
 TOKEN=Replace with your bot's token that I just explained how to obtain
@@ -56,6 +57,7 @@ Go to `config.json` and then:
 ```
 
 **Channel Setup**
+
 go to `channels.json`
 
 ```js
