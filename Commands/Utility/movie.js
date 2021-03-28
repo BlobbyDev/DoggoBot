@@ -19,30 +19,30 @@ module.exports = {
         
         
 
-            const imdb = new imdb.Client({ apiKey: process.env.IMDB})
+        const Imdb = new imdb.Client({ apiKey: process.env.IMDB})
 
-            let movie = await imdb.get({name: args.join(" ")});
+        let movie = await Imdb.get({name: args.join(" ")});
         
-            const embed = new Discord.MessageEmbed()
+        const embed = new Discord.MessageEmbed()
             
-            .setColor(message.guild.me.displayHexColor)
-            .setTitle(movie.title)
-            .setURL(movie.imbdurl)
-            .setThumbnail(movie.poster)
-            .setDescription(`\`\`\`${movie.plot}\`\`\``)
-            .addField('Rating', `\`\`\`${movie.rating}\`\`\``, true)
-            .addField('Time', `\`\`\`${movie.runtime}\`\`\``, true)
-            .addField('Awards', `\`\`\`${movie.awards}\`\`\``, true)
-            .addField('Language', `\`\`\`${movie.languages}\`\`\``, true)
-            .addField('Genre', `\`\`\`${movie.genres}\`\`\``, true)
-            .addField('PG', `\`\`\`${movie.rated}\`\`\``, true)
-            .addField('Country', `\`\`\`${movie.country}\`\`\``, true)
-            .addField('Released', `\`\`\`${moment.utc(movie.released).format('DD/MMM/YYYY')}\`\`\``, true)
-            .setTimestamp()
+        .setColor(message.guild.me.displayHexColor)
+        .setTitle(movie.title)
+        .setURL(movie.imbdurl)
+        .setThumbnail(movie.poster)
+        .setDescription(`\`\`\`${movie.plot}\`\`\``)
+        .addField('Rating', `\`\`\`${movie.rating}\`\`\``, true)
+        .addField('Time', `\`\`\`${movie.runtime}\`\`\``, true)
+        .addField('Awards', `\`\`\`${movie.awards}\`\`\``, true)
+        .addField('Language', `\`\`\`${movie.languages}\`\`\``, true)
+        .addField('Genre', `\`\`\`${movie.genres}\`\`\``, true)
+        .addField('PG', `\`\`\`${movie.rated}\`\`\``, true)
+        .addField('Country', `\`\`\`${movie.country}\`\`\``, true)
+        .addField('Released', `\`\`\`${moment.utc(movie.released).format('DD/MMM/YYYY')}\`\`\``, true)
+        .setTimestamp()
         
-            message.channel.send(embed)
+        message.channel.send(embed)
 
-        } 
+    } 
         
-    }
+}
  
