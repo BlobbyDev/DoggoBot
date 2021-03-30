@@ -6,6 +6,7 @@ module.exports = {
 
     name: "lesbianrate",
     aliases: ["lr"],
+    category: "Fun",
     description: "Gives the lesbianrate of the user !!",
     example: `${config.Prefix}lesbianrate @Dinav`,
 
