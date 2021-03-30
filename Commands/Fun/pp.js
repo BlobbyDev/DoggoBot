@@ -40,7 +40,7 @@ module.exports = {
     
     run: async (client, message, args) => {
 
-      const member =  message.mentions.members.first() || message.guild.members.cache.get(args[0]);
+      const member =  message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
 
       if(!member)
       return message.reply(`${emoji.Error} Mention someone or provide their user ID to get their PP Size`)
