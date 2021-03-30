@@ -71,7 +71,7 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 
 ## Starting the Bot
 
-First I'll be explaing what all things are required
+**Things that are required**
 
 [Node.js](https://nodejs.org/en/)
 
