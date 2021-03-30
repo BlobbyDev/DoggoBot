@@ -7,6 +7,7 @@ module.exports = {
     aliases: ["dice"],
     description: "Roll a die for you !!",
     example: `${config.Prefix}roll`,
+    category: "Fun",
 
     run: async (client, message, args) => {
     let limit = args[0];
