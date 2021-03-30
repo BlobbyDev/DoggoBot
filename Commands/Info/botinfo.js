@@ -25,6 +25,8 @@ module.exports = {
         return Duration.replace("0 Day\n", "").replace("0 Hour\n", "").replace("0 Minute\n", "");
         }
 
+        const Developer = client.users.cache.get(config.Owner)
+
         let Uptime = await RemoveUseless(`${Days}${Days > 1 ? "d" : "d"} ${Hours}${Hours > 1 ? "h" : "h"} ${Minutes}${Minutes > 1 ? "m" : "m"} ${Seconds}${Seconds > 1 ? "s" : "s"}`);
     
 
@@ -40,7 +42,7 @@ module.exports = {
         .addField(`${emoji.Pinging} Bot Ping`, `\`\`\`Latency: ${Date.now()-message.createdTimestamp} ms\nAPI Latency: ${Math.round(client.ws.ping)} ms\`\`\``, true)
         .addField(`${emoji.Commands} Command Size`, `\`\`\`${client.commands.size} Commands\n${client.aliases.size} Aliases\`\`\``, true)
         .addField(`${emoji.Prefix} Prefix`, `\`\`\`${config.Prefix}\`\`\``, true)
-        .addField(`${emoji.BotDev} Developer`, `\`\`\`Dinav#6969 | ${config.Owner}\`\`\``, true)
+        .addField(`${emoji.BotDev} Developer`, `\`\`\`${Developer.tag} | ${config.Owner}\`\`\``, true)
         .addField(`${emoji.Uptime} Uptime`, `\`\`\`${Uptime}\`\`\``, true)
         .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server})`)
         .setTimestamp()
