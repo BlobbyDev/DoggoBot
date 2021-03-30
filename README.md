@@ -125,6 +125,9 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | Roll | Rolls die for you | !!roll | !!roll | dice 
 | Trumptweet | Converts you text to trump's tweet lol | !!trumptweet [message] | !!trumptweet Hi | tt
 | Tictactoe | To play tic tac toe with the mentioned user | !!tictactoe [user] | !!tictactoe @Dinav | ttt
+| Gayrate | Gets in the gayrate of the provided user | !!gayrate [user] | !!gayrate @Dinav | -
+| Lesbianrate | Gets the lesbianrate of the provided user | !!lesbianrate [user] | !!lesbianrate @Dinav | lr
+| Simprate | Gets the simprate of the provided user | !!simprate [user] | !!simprate @Dinav | simp
 
 ## Utility 
 
@@ -139,6 +142,8 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | Embed | Echos your message in embed | !!embed [text] | !!embed Hi | -
 | Translate | Translates your word to the provided language | !!translate [language that you need the meaning] [Word] | !!translate spanish Hi | t
 | Movie | Gived the info of the provided movie | !!movie [movie name] | !!movie avengers endgame | -
+| Google | Google anything | !!google [query] | !!google YouTube | -
+| Poll | Starts a poll | !!poll [text] | !!poll Am I great ? | -
 
 ## Image 
 | Name | Description | Usage | Example | Aliases
@@ -151,6 +156,7 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | Panda | Sends a random panda pic | !!panda | !!panda | -
 | Koala | Sends a random koala pic | !!koala | !!koala | -
 | Redpanda | Sends a ransom red panda pic | !!redpanda | !!redpanda | -
+| Waifu | Send a random waifu pic | !!waifu | !!waify | -
 
 
 ## Info 
