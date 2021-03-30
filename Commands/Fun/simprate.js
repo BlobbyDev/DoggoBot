@@ -7,6 +7,7 @@ module.exports = {
     aliases: ["simp"],
     description: "Gives the simprate of the user !!",
     example: `${config.Prefix}simprate @Dinav`,
+    category: "Fun",
 
     run: async (client, message, args) => {
 
