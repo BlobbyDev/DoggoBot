@@ -13,8 +13,8 @@ module.exports = {
         const Fun = "```8ball, Ascii, PP, Rps, Coinflip, Roll, Tictactoe, Simprate, Gayrate, Lesbianrate```";
         const Info = "```Help, Ping, Serverinfo, Uptime, Whois, Channelinfo, Roleinfo, Servericon, Policy```";
         const Moderation = "```Ban, Kick, Unban, Forceban, Slowmode, Clear, Addrole, Removerole, Nickname```";
-        const Utility = "```Avatar, Covid, Embed, Say, Urban, Weather, Translate, Youtube, Calculate, Spotify, Qr, Poll, Movie```";
-        const Image = "```Meme, Dog, Fox, Bird, Cat, Panda, RedPanda, Koala, Shibe, Bonk, Trumptweet```";
+        const Utility = "```Avatar, Covid, Embed, Say, Urban, Weather, Translate, Youtube, Calculate, Spotify, Qr, Poll, Google```";
+        const Image = "```Meme, Dog, Fox, Bird, Cat, Panda, RedPanda, Koala, Shibe, Bonk, Trumptweet, Invert, Gay, Trigger, Jail, Affect, Trash```";
         const Fact = "```Catfact, Dogfact, Pandafact, Birdfact, Foxfact, Koalafact```";
         const Others = "```Invite, Support, Github```";
         const Misc = "```Report, Feedback, Suggest```";
@@ -32,6 +32,7 @@ module.exports = {
         .addField(`${emoji.Wink} Others`, Others, true)
         .addField(`${emoji.Misc} Misc`, Misc, true)
         .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
+        .setColor(message.guild.me.displayHexColor)
         .setTimestamp()
 
         
@@ -44,7 +45,7 @@ module.exports = {
         .setTitle('Command Info')
         .addField('Name', `\`\`\`${command.name}\`\`\``, true)
         .addField('Category', `\`\`\`${command.category}\`\`\``, true)
-        .addField('Aliases', `\`\`\`${command.aliases ? command.aliases.join(", ") : "`None`"}\`\`\``, true)
+        .addField('Aliases', `\`\`\`${command.aliases ? command.aliases.join(", ") : "-"}\`\`\``, true)
         .addField('Example', `\`\`\`${command.example}\`\`\``, true)
         .addField('Description', `\`\`\`${command.description}\`\`\``)
         .setTimestamp()

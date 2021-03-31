@@ -1,4 +1,3 @@
-const Discord = require("discord.js");
 const config = require('../../config.json');
 const emoji = require('../../Utils/emoji.json');
 

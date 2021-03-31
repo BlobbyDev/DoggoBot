@@ -13,7 +13,7 @@ module.exports = {
 
     run: async (client, message, args) => {
 
-    const apiKey = process.env.YT;
+    const apiKey = process.env.YT_KEY;
     const videoName = args.join(' ');
     const banned = ["porn", "sex", "fucking", "moaning", "blowjob", "tits", "dick", "sucking", "nigga", "nigger", "pussy", "cock", "boobs", "xvideos", "xnxx", "clits", "naked", "hentai", "horny", "faping", "masturbating", "masturbation", "fuck", "stript", "naked"]  
 

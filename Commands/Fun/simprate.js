@@ -5,9 +5,9 @@ const emoji = require('../../Utils/emoji.json');
 module.exports = {
     name: "simprate",
     aliases: ["simp"],
+    category: "Fun",
     description: "Gives the simprate of the user !!",
     example: `${config.Prefix}simprate @Dinav`,
-    category: "Fun",
 
     run: async (client, message, args) => {
 

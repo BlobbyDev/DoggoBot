@@ -32,7 +32,8 @@ module.exports = {
 
         const embed = new Discord.MessageEmbed()
         
-        .setTitle(`${client.user.username}'s Info`)
+        .setAuthor(client.user.tag, client.user.displayAvatarURL())
+        .setTitle(`Information`)
         .addField(`${emoji.Tag} Name | ID`, `\`\`\`${client.user.tag} | ${client.user.id}\`\`\``, true)
         .addField(`${emoji.Globe} Used By`, `\`\`\`${client.guilds.cache.size} Servers\`\`\``, true)
         .addField(`${emoji.Users} User Count`, `\`\`\`${usersCount} Users\`\`\``, true)
@@ -45,6 +46,7 @@ module.exports = {
         .addField(`${emoji.BotDev} Developer`, `\`\`\`${Developer.tag} | ${config.Owner}\`\`\``, true)
         .addField(`${emoji.Uptime} Uptime`, `\`\`\`${Uptime}\`\`\``, true)
         .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server})`)
+        .setColor(message.guild.me.displayHexColor)
         .setTimestamp()
 
         message.channel.send(embed)

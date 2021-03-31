@@ -34,12 +34,12 @@ module.exports = {
             .setFooter(client.user.username)
             .setTitle("Eval")
             .addField("To Evaluate", `\`\`\`js\n${beautify(args.join(" "), { format: "js"})}\n\`\`\``)
-            .addField("Evaluated:", evaluated)
-            .addField("Type of:", typeof(evaluated));
+            .addField("Evaluated:", `\`\`\`${evaluated}\`\`\``)
+            .addField("Type of:", `\`\`\`${typeof(evaluated)}\`\`\``);
 
             message.channel.send(embed);
 
-        }catch (e) {
+        } catch (e) {
             let embed = new Discord.MessageEmbed()
             .setColor("#FF0000")
             .setTitle(`${emoji.Error} Error!`)

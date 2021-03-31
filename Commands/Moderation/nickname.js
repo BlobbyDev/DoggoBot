@@ -73,7 +73,7 @@ module.exports = {
           .setTitle('Nickname Changed !!')
           .setDescription(`${emoji.Approved} <@${user.id}> (\`${user.user.tag}\`) nickname has been successfully changed !!`)
           .addField('Changed By', `<@${message.member.id}>\n(\`${message.member.user.tag}\`)`, true)
-          .addField('Changed User', `<@${user.id}>\n(\`${user.user.tag}\`)`, true)
+          .addField('Chnaged User', `<@${user.id}>\n(\`${user.user.tag}\`)`, true)
           .addField('Changelog', changelog, true)
           .addField('Reason', reason)
           .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
