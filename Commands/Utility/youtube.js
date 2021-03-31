@@ -17,7 +17,7 @@ module.exports = {
     const videoName = args.join(' ');
     const banned = ["porn", "sex", "fucking", "moaning", "blowjob", "tits", "dick", "sucking", "nigga", "nigger", "pussy", "cock", "boobs", "xvideos", "xnxx", "clits", "naked", "hentai", "horny", "faping", "masturbating", "masturbation", "fuck", "stript", "naked"]  
 
-    if (!videoName) return this.sendErrorMessage(`${emoji.Error} Please provide a YouTube video name`);
+    if (!videoName) return message.reply(`${emoji.Error} Please provide a YouTube video name`);
 
     const searchOptions = { maxResults: 1, key: apiKey, type: 'video' };
 
