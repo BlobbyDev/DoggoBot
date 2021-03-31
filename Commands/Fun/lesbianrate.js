@@ -19,7 +19,7 @@ module.exports = {
         return message.reply(`${emoji.Error} Provide a valid user from this guild !!`)
 
         const embed = new Discord.MessageEmbed()
-        .setTitle(`${emoji.Gay} Lesbian rate !!`)
+        .setTitle(`${emoji.Lesbian} Lesbian rate !!`)
         .setDescription(`${user} (\`${user.user.tag}\`) is ${lesbianrate} % lesbian !! ${emoji.Lesbian}`)
         .setTimestamp()
 
