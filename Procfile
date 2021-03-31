@@ -1,1 +1,1 @@
-Woker: node shard.js
+Woker: node index.js
