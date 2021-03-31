@@ -20,7 +20,7 @@ module.exports = {
 
         new DIG.Blur().getImage(avatar, 43);
 
-        let img = await new DIG.Blur().getImage(avatar), ;
+        let img = await new DIG.Blur().getImage(avatar);
 
         let attach = new Discord.MessageAttachment(img, "affect.png");
 
