@@ -1,6 +1,7 @@
 const got = require('got');
 const Discord = require('discord.js');
 const config = require('../../config.json');
+const emoji = require('../../Utils/emoji.json');
 
 module.exports = {
     name: "waifu",
@@ -9,6 +10,12 @@ module.exports = {
     example: `${config.Prefix}waifu`,
 
     run: async (client, message, args) => {
+
+        const channel = message.channel.nsfw
+
+        if (!channel)
+        return message.reply(`${emoji.Error} Pls make sure the command is excuted in a nsfw channel !!`)
+
         const embed = new Discord.MessageEmbed()
         got('https://reddit.com/r/animewaifus/random.json').then(response => {
             let content = JSON.parse(response.body);
