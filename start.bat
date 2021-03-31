@@ -1,1 +1,1 @@
-node shard.js
+node index.js
