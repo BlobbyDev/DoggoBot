@@ -7,7 +7,7 @@ module.exports = {
     aliases: ["shorten"],
     category: "Utility",
     description: "Shortens youe URL !!",
-    example: `${config.Prefix}`,
+    example: `${config.Prefix}linkshorten https://discord.gg/RWSEj6JrjJ blob_lab`,
 
     run: async (client, message, args) => {
 
