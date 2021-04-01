@@ -21,10 +21,10 @@ module.exports = {
         let command = args[1].toLowerCase()
 
         try {
-            delete require.cache[require.resolve(`../../Commands/${category}/${command}.js`)];
+            delete require.cache[require.resolve(`${__dirname}/../../Commands/${category}/${command}.js`)];
             client.commands.delete(command);
 
-            const pull = require(`../../Commands/${category}/${command}.js`)
+            const pull = require(`${__dirname}/../../Commands/${category}/${command}.js`)
             client.commands.set(command, pull)
 
             return message.channel.send(`${emoji.Approved} Reloaded Command: **\`${command}\`**`)
