@@ -102,7 +102,7 @@ module.exports = {
         .setTitle('Command Info')
         .addField('Name', `\`\`\`${command.name}\`\`\``, true)
         .addField('Category', `\`\`\`${command.category}\`\`\``, true)
-        .addField('Aliases', `\`\`\`${command.aliases.name ? command.aliases.join(", ") : "-"}\`\`\``, true)
+        .addField('Aliases', `\`\`\`${command.aliases ? command.aliases.join(", ") : "-"}\`\`\``, true)
         .addField('Example', `\`\`\`${command.example}\`\`\``, true)
         .addField('Description', `\`\`\`${command.description}\`\`\``)
         .setTimestamp()
