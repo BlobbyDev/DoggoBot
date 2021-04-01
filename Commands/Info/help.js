@@ -100,9 +100,9 @@ module.exports = {
         const Embed = new Discord.MessageEmbed()
 
         .setTitle('Command Info')
-        .addField('Name', `\`\`\`${command.namecharAt(0).toUpperCase()}\`\`\``, true)
+        .addField('Name', `\`\`\`${command.name}\`\`\``, true)
         .addField('Category', `\`\`\`${command.category}\`\`\``, true)
-        .addField('Aliases', `\`\`\`${command.aliasesname.charAt(0).toUpperCase() ? command.aliases.join(", ") : "-"}\`\`\``, true)
+        .addField('Aliases', `\`\`\`${command.aliasesname ? command.aliases.join(", ") : "-"}\`\`\``, true)
         .addField('Example', `\`\`\`${command.example}\`\`\``, true)
         .addField('Description', `\`\`\`${command.description}\`\`\``)
         .setTimestamp()
