@@ -24,56 +24,59 @@ module.exports = {
 
         const intro = new Discord.MessageEmbed()
         .setAuthor(client.user.tag, client.user.displayAvatarURL())
-        .setDescription(`Hey there I'm ${client.user.username} my prefix is **\`${config.Prefix}\`** and if you forget prefix ping me, if you want to get the list of commands then react to emojis that I have already reacted so yeah lets gets started !!\n\nFor the detailed help for a command type \`${config.Prefix}help [command name]\`\n\n**We Have Commands For:**\n${emoji.Fun} \`Fun\`\n${emoji.Info} \`Info\`\n${emoji.Moderation} \`Moderation\`\n${emoji.Utility} \`Utility\`\n${emoji.Camera} \`Image\`\n${emoji.Misc} \`Misc\``)
-        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
+        .setTitle(`${emoji.Wave} Introduction !!`)
+        .setDescription(`Hey there I'm ${client.user.username} my prefix is **\`${config.Prefix}\`** and **ping me if you forget the prefix**, if you want to get the list of commands then react to emojis that I have already reacted so yeah lets gets started !!`)
+        .addField(`${emoji.Search} For The Detailed Help For a Command`, `\`${config.Prefix}help [command name]\``)
+        .addField('We Have Commands For:', `${emoji.Fun} \`Fun\`\n${emoji.Info} \`Info\`\n${emoji.Moderation} \`Moderation\`\n${emoji.Utility} \`Utility\`\n${emoji.Camera} \`Image\`\n${emoji.Wink} \`Others\`\n${emoji.Misc} \`Misc\``)
+        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
         const fun = new Discord.MessageEmbed()
         .setTitle(`${emoji.Fun} Fun Commands`)
         .setDescription(Fun)
-        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
+        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
         const info = new Discord.MessageEmbed()
         .setTitle(`${emoji.Info} Info Commands`)
         .setDescription(Info)
-        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
+        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
         const mod = new Discord.MessageEmbed()
         .setTitle(`${emoji.Moderation} Moderation Commands`)
         .setDescription(Moderation)
-        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
+        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
         const utility = new Discord.MessageEmbed()
         .setTitle(`${emoji.Utility} Utility Commands`)
         .setDescription(Utility)
-        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
+        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
         const image = new Discord.MessageEmbed()
         .setTitle(`${emoji.Camera} Image`)
         .setDescription(Image)
-        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
+        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
         const animals = new Discord.MessageEmbed()
         .setTitle(`${emoji.DoggoLul} Animals`)
         .setDescription(Animals)
-        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
+        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
         const others = new Discord.MessageEmbed()
         .setTitle(`${emoji.Wink} Others`)
         .setDescription(Others)
-        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
+        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
         const misc = new Discord.MessageEmbed()
         .setTitle(`${emoji.Misc} Misc`)
         .setDescription(Misc)
-        .addField(`${emoji.Link} Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
+        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
         const pages = [
@@ -97,7 +100,7 @@ module.exports = {
     
         if(!command) return;
 
-        const Embed = new Discord.MessageEmbed()
+        const embed = new Discord.MessageEmbed()
 
         .setTitle('Command Info')
         .addField('Name', `\`\`\`${command.name}\`\`\``, true)
@@ -107,7 +110,7 @@ module.exports = {
         .addField('Description', `\`\`\`${command.description}\`\`\``)
         .setTimestamp()
 
-        message.channel.send(Embed)
+        message.channel.send(embed)
     
     }
         
