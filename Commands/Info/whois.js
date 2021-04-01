@@ -33,19 +33,19 @@ module.exports = {
         }
 
         const badges = {
-            DISCORD_EMPLOYEE: `${emoji.DiscordStaff} \`Discord Staff\``, 
-            DISCORD_PARTNER: `${emoji.DiscordPartner} \`Partnered Server Owner\``, 
-            BUGHUNTER_LEVEL_1: `${emoji.DiscordBugHunter} \`Bug Hunter\``, 
-            BUGHUNTER_LEVEL_2: `${emoji.DiscordBugHunter2} \`Bug Hunter\``, 
-            HYPESQUAD_EVENTS: `${emoji.HypesqaudEvents} \`Hypesquad Events\``, 
-            HOUSE_BRAVERY: `${emoji.HypesquadBravery} \`Hypesquad Bravery\``, 
-            HOUSE_BRILLIANCE: `${emoji.HypesquadBrilliance} \`Hypesquad Brilliance\``,
-            HOUSE_BALANCE: `${emoji.HypesquadBalance} \`Hypesquad Balance\``, 
-            EARLY_SUPPORTER: `${emoji.EarlySupporter} \`Early Supporter\``, 
+            DISCORD_EMPLOYEE: `${emoji.DiscordStaff}`, 
+            DISCORD_PARTNER: `${emoji.DiscordPartner}`, 
+            BUGHUNTER_LEVEL_1: `${emoji.DiscordBugHunter}`, 
+            BUGHUNTER_LEVEL_2: `${emoji.DiscordBugHunter2}`, 
+            HYPESQUAD_EVENTS: `${emoji.HypesqaudEvents}`, 
+            HOUSE_BRAVERY: `${emoji.HypesquadBravery}`, 
+            HOUSE_BRILLIANCE: `${emoji.HypesquadBrilliance}`,
+            HOUSE_BALANCE: `${emoji.HypesquadBalance}`, 
+            EARLY_SUPPORTER: `${emoji.EarlySupporter}`, 
             TEAM_USER: '`Team User`',
             SYSTEM: '`System`',
-            VERIFIED_BOT: `${emoji.VerifiedBot} \`Verified Bot\``, 
-            VERIFIED_DEVELOPER: `${emoji.BotDev} \`Early Verified Bot Developer\``,
+            VERIFIED_BOT: `${emoji.VerifiedBot}`, 
+            VERIFIED_DEVELOPER: `${emoji.BotDev}`,
         }
     
         const flags = await member.user.fetchFlags()
@@ -67,7 +67,7 @@ module.exports = {
             if (userFlags.length <= 0)
             embed.addField('Badges', `\`No Badge\``, true)
             if (userFlags.length > 0)
-            embed.addField('Badges', userFlags.map(flag => badges[flag]), true)
+            embed.addField('Badges', userFlags.map(flag => badges[flag]).join(' '), true)
             .setFooter(`Requested by ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
         
             if (member.user.presence.game) 
