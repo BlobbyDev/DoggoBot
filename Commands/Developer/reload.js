@@ -3,7 +3,7 @@ const emoji = require('../../Utils/emoji.json');
 
 module.exports = {
     name: "reload",
-    aliases: "load",
+    aliases: ["load"],
     category: "Developer",
     description: "Reloades the provided command !!",
     example: `${config.Prefix}reload Fun pp`,
@@ -30,7 +30,7 @@ module.exports = {
             return message.channel.send(`${emoji.Approved} Reloaded Command: **\`${command}\`**`)
 
         } catch (error) {
-            return message.reply(`${emoji.Error} Cannot reload **\`${command}\`** **${error}**`)
+            return message.reply(`${emoji.Error} Cannot reload **\`${command}\`**\`\`\`${error}\`\`\``)
         }
 
     }
