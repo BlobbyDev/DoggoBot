@@ -10,6 +10,10 @@ module.exports = {
     example: `${config.Prefix}urban Hello`,
 
     run: async (client, message, args) => {
+        
+        const channel = message.channel.nsfw
+        if (!channel) return message.reply(`${emoji.Error} Be in a **NSFW Channel** !!`)
+        
         if (!args.length) return message.channel.send(`${emoji.Error} You need to supply a search term!`); 
     
         const query = encodeURIComponent(args.join(' '));
