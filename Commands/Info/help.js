@@ -82,6 +82,7 @@ module.exports = {
         const pages = [
             intro,
             fun,
+            info,
             mod,
             utility,
             image,
