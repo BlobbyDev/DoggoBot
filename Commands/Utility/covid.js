@@ -12,14 +12,8 @@ module.exports = {
 
     run: async (client, message, args) => {
         let countries = args.join(" ");
-
-        const noArgs = new Discord.MessageEmbed()
-        .setTitle('Missing arguments')
-        .setColor(0xFF0000)
-        .setDescription('You are missing some args (ex: !!covid all or !!covid Canada or any other country)')
-        .setTimestamp()
-
-        if(!args[0]) return message.channel.send(noArgs);
+        
+        if(!countries) return message.channel.send(`${emoji.Error} Provide a country !!`);
 
         if(args[0] === "all"){
             fetch(`https://covid19.mathdro.id/api`)
