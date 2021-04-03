@@ -27,7 +27,7 @@ module.exports = {
         .setTitle(`${emoji.Wave} Introduction !!`)
         .setDescription(`Hey there I'm ${client.user.username} my prefix is **\`${config.Prefix}\`** and **ping me if you forget the prefix**, if you want to get the list of commands then react to emojis that I have already reacted so yeah lets gets started !!`)
         .addField(`${emoji.Search} For The Detailed Help For a Command`, `\`${config.Prefix}help [command name]\``)
-        .addField('We Have Commands For:', `${emoji.Fun} \`Fun\`\n${emoji.Info} \`Info\`\n${emoji.Moderation} \`Moderation\`\n${emoji.Utility} \`Utility\`\n${emoji.Camera} \`Image\`\n${emoji.Wink} \`Others\`\n${emoji.Misc} \`Misc\``)
+        .addField('We Have Commands For:', `${emoji.Fun} \`Fun\`\n${emoji.Info} \`Info\`\n${emoji.Moderation} \`Moderation\`\n${emoji.Utility} \`Utility\`\n${emoji.Camera} \`Image\`\n${emoji.DoggoLul} \`Animals\`\n${emoji.Wink} \`Others\`\n${emoji.Misc} \`Misc\``)
         .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
