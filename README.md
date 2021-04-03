@@ -145,10 +145,29 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | Google | Google anything | !!google [query] | !!google YouTube | -
 | Poll | Starts a poll | !!poll [text] | !!poll Am I great ? | -
 
-## Image 
+## Image
 | Name | Description | Usage | Example | Aliases
 |----|----|----|----|----|
 | Meme | Sends a random meme from reddit | !!meme | !!meme | -
+| Waifu | Send a random waifu pic | !!waifu | !!waify | -
+| Gay | Send the provided user's avatar in gay theme | !!gay [user] | !!gay @Dinav | -
+| Invert | Send the provided user's avatar in inverted filter | !!invert [user] | !!invert @Dinav | -
+| Blur | Send the provided user's avatar in blur filter | !!blur [user] | !!blur @Dinav | -
+| Criminal | Send the provided user's avatar in news headlines lol | !!criminal [user] | !!criminal @Dinav | -
+| Affect | Send the user's avatar in affect my baby meme | !!affect [user] | !!affect @Dinav | -
+| Stonk | Send the user's avatar in stonks meme | !!stonk [user] | !!stonk @Dinav | -
+| Nostonk | Send the user's avatar in no stonks meme | !!nostonk [user] | !!nostonk @Dinav | notstonk
+| Trigger | Send the user's avatar in triggered !! | !!trigger [user] | !!trigger @Dinav | triggered 
+| Jail | Send the user's avatar in jail | !!jail [user] | !!jail @Dinav | -
+| Bonk | Bonks the user | !!bonk [user] | !!bonk @Dinav | -
+| Slap | Slaps the user | !!slap [user] | !!slap @Dinav | -
+| Spank | Spanks the user | !!spank [user] | !!spank @Dinav | -
+| Kiss | Kisses the user | !!kiss [user] | !!kiss @Dinav | -
+| Wanted | Put the user in the wanted meme | !!wanted [user] | !!wanted @Dinav | -
+
+## Animals
+| Name | Description | Usage | Example | Aliases
+|----|----|----|----|----|
 | Dog | Sends a random doggo pic | !!dog | !!dog | doggy, doggo
 | Fox | Sends a random fox pic | !!fox | !!fox | -
 | Bird | Sends a random bird pic | !!bird | !!bird | -
@@ -156,8 +175,6 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | Panda | Sends a random panda pic | !!panda | !!panda | -
 | Koala | Sends a random koala pic | !!koala | !!koala | -
 | Redpanda | Sends a ransom red panda pic | !!redpanda | !!redpanda | -
-| Waifu | Send a random waifu pic | !!waifu | !!waify | -
-
 
 ## Info 
 | Name | Description | Usage | Example | Aliases 
