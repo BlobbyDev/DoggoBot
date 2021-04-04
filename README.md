@@ -6,7 +6,7 @@ A cool multi purpose bot with some fun commands
 
 [![DiscordBanner](https://invidget.switchblade.xyz/RWSEj6JrjJ)](https://discord.gg/RWSEj6JrjJ)
 
-[![LOC](https://tokei.rs/b1/github/Dinav69/DoggoBot?category=code)]
+![LOC](https://tokei.rs/b1/github/Dinav69/DoggoBot?category=code)
 
 ## How to setup 
 
