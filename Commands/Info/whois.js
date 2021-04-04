@@ -4,8 +4,8 @@ const emoji = require('../../Utils/emoji.json');;
 const config = require('../../config.json');
 
 module.exports = {
-    name: "userinfo",
-    aliases: ["whois", "ui"],
+    name: "whois",
+    aliases: ["userinfo", "ui"],
     description: "Says the information of the mentioned user",
     example: `${config.Prefix}whois @Dinav`,
     category: "Info",
