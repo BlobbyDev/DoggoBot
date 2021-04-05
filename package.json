@@ -2,9 +2,9 @@
   "name": "doggo",
   "version": "3.1.1",
   "description": "A Cool Multi Purpose Discord Bot with commands for Fun, Utility, Moderation, Images, Facts",
-  "main": "shard.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node shard.js"
+    "start": "node index.js"
   },
   "keywords": [
     "A Discord Bot"
