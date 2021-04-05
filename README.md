@@ -37,8 +37,8 @@ And now you got the token !!!
 Make a `.env` file and then:
 ```
 TOKEN=Replace with your bot's token that I just explained how to obtain
-YT=YouTube API key if you don't need to youtube command then no need to put the API key
-IMBD=IMBD api key for the movie command
+YT_KEY=YouTube API key if you don't need to youtube command then no need to put the API key
+IMBD_KEY=IMBD api key for the movie command
 GOOGLE_KEY=The Goole api search engine key
 ENGINE_ID=The search engine ID
 ```
