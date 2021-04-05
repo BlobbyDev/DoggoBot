@@ -20,7 +20,7 @@ module.exports = {
         
         
 
-        const Imdb = new imdb.Client({ apiKey: process.env.IMDB})
+        const Imdb = new imdb.Client({ apiKey: process.env.IMDB_KEY})
 
         let movie = await Imdb.get({name: args.join(" ")});
         
