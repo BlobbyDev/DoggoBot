@@ -43,6 +43,7 @@
     "random-puppy": "^1.1.0",
     "reconlx": "^1.2.3",
     "srod-v2": "^1.0.2",
+    "twemoji-parser": "^13.0.0",
     "weather-js": "^2.0.0",
     "youtube-search": "^1.1.6"
   }
