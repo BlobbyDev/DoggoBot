@@ -10,7 +10,7 @@
     "A Discord Bot"
   ],
   "author": "Dinav69",
-  "license": "GPU 3.0",
+  "license": "GPL 3.0",
   "dependencies": {
     "@discordjs/opus": "^0.4.0",
     "ascii-table": "^0.0.9",
