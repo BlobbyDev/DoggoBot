@@ -64,8 +64,8 @@ go to `channels.json`
 {
     "ServerLogs": "ID of channel that you wann receive the bot's server logs",
     "Feeback": "ID of the channel that you wanna get the feedback of the bot",
-    "Report": "Id of the channel that you wann get the reports of the bot",
-    "Suggestion": "ID of the channel that you wanna get the duggestions of the bot"
+    "Report": "Id of the channel that you wanna get the reports of the bot",
+    "Suggestion": "ID of the channel that you wanna get the suggestions of the bot"
 }
 ```
 
