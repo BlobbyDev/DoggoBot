@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const client = new Discord.Client( { ws: { properties: { $browser: "Discord iOS" }} } );
+const client = new Discord.Client( { disableMentions: "all", ws: { properties: { $browser: "Discord iOS" }} } );
 require('dotenv').config();
 
 client.commands = new Discord.Collection();
