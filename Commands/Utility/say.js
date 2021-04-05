@@ -10,12 +10,7 @@ module.exports = {
     
     run: (client, message, args) => {
 
-        if (message.content.includes("@here") || message.content.includes("@everyone"))
-        return message.reply(`${emoji.Error} Hey you don't try to ping everyone or here`)
-        .then(msg => {
-            msg.delete({ timeout: 15000 })
-        });
-
+        
         if (message.content.includes("discord.gg"))
         return message.reply(`${emoji.Error} Yo don't try to post server link using me !!!`)
         .then(msg => {
@@ -23,7 +18,7 @@ module.exports = {
         });
 
         if (args.length <= 0)
-        return message.reply("Oh come on man say something !!")
+        return message.reply(`${emoji.Error} Come on man say something !!`)
         .then(msg => {
             msg.delete({ timeout: 10000 })
         });
