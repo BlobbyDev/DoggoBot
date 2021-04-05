@@ -21,12 +21,12 @@ module.exports = {
             }
             else {
                 let parsed = parse(Emoji, { assetType: "png" });
-                if (!parsed[0]) return message.reply(`${emoji.Error} Failed to emojify ${Emoji}`);
+                if (!parsed[0]) return message.reply(`${emoji.Error} Failed to enlarge ${Emoji}`);
 
                 return message.channel.send(parsed[0].url);
             }
         } catch (err) {
-            message.reply(`${emoji.Error} Failed to emojify ${Emoji}`);
+            message.reply(`${emoji.Error} Failed to enlarge ${Emoji}`);
         }
     }
 } 
