@@ -22,7 +22,7 @@ module.exports = {
 
     if (userChoice === botChoice) result = 'It\'s a draw no one wins';
 
-    else if (botChoice > userChoice || botChoice === 0 && userChoice === 2) result = '**Doggo** wins to save the doggonity!';
+    else if (botChoice > userChoice || botChoice === 0 && userChoice === 2) result = `**${client.user.username}** Wins`;
     else result = `**${message.member.displayName}** Wins nice my dude !!`;
 
     const embed = new Discord.MessageEmbed()
