@@ -11,7 +11,7 @@ module.exports = {
     run: (client, message, args) => {
 
         
-        if (message.content.includes("discord.gg"))
+        if (message.content.includes("discord.gg/"))
         return message.reply(`${emoji.Error} Yo don't try to post server link using me !!!`)
         .then(msg => {
             msg.delete({ timeout: 15000 })
