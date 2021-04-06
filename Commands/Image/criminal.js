@@ -6,7 +6,7 @@ const DIG = require("discord-image-generation");
 module.exports = {
     name: "criminal",
     category: "Image",
-    description: "Converts a user's avatar in affect my baby meme !!",
+    description: "Converts a user's avatar in news !!",
     example: `${config.Prefix}criminal @Dinav`,
 
     run: async (client, message, args) => {
