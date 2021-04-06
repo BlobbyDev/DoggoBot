@@ -1,6 +1,6 @@
 # Doggo
 
-A cool multi purpose bot with some fun commands
+A cool multi purpose discord bot with commands for Fun, Moderation, Utility, Image and Animals also with owner only commands !!
 
 [Add It](https://discord.com/api/oauth2/authorize?client_id=818092139496996864&permissions=8&scope=bot) | [Join Our Discord](https://discord.gg/RWSEj6JrjJ)
 
