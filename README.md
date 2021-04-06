@@ -130,6 +130,7 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | Gayrate | Gets in the gayrate of the provided user | !!gayrate [user] | !!gayrate @Dinav | -
 | Lesbianrate | Gets the lesbianrate of the provided user | !!lesbianrate [user] | !!lesbianrate @Dinav | lr
 | Simprate | Gets the simprate of the provided user | !!simprate [user] | !!simprate @Dinav | simp
+| Emojify | Emojifies you text | !!emojify [text] | !!emojify hi | emoji
 
 ## Utility 
 
@@ -146,6 +147,9 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | Movie | Gived the info of the provided movie | !!movie [movie name] | !!movie avengers endgame | -
 | Google | Google anything | !!google [query] | !!google YouTube | -
 | Poll | Starts a poll | !!poll [text] | !!poll Am I great ? | -
+| Linkshorten | Shorten the  given link to is.gd formate | !!linkshorten [link] [name of the title] | !!linkshorten https://youtube.com/ yt | shorten
+| Enlarge | Enlarges the given emoji | !!enlarge [Emoji] | !!enlarge 😂 | -
+
 
 ## Image
 | Name | Description | Usage | Example | Aliases
@@ -176,7 +180,15 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | Cat | Sends a random cat pic | !!cat | !!cat | -
 | Panda | Sends a random panda pic | !!panda | !!panda | -
 | Koala | Sends a random koala pic | !!koala | !!koala | -
+| Shibe | Sends a random shibe pic | !!shibe | !!shibe | -
 | Redpanda | Sends a ransom red panda pic | !!redpanda | !!redpanda | -
+| Kangaroo | Sends a random kangaroo pic | !!kangaroo | !!kangaroo | -
+| Racoon | Sends a random rancoon pic | !!racoon | !!racoon | -
+| Catfact | Gives a random cat fact | !!catfact | !!catfact | cf
+| Dogfact | Gives a random dog fact | !!dogfact | !!dogfact | df
+| Foxfact | Gives a random fox fact | !!foxfact | !!foxfact | ff
+| Pandafact | Gives a random panda fact | !!pandafact | !!pandafact | pf
+| Birdfact | Gives a random bird fact | !!birdfact | !!birdfact | bf
 
 ## Info 
 | Name | Description | Usage | Example | Aliases 
@@ -189,6 +201,8 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | Uptime | Gives the uptime of the bot | !!uptime | !!uptime | ut
 | Channelinfo | Gives the info of the provided channel | !!channel info [channel] | !!channelinfo #general | channel
 | Roleinfo | Gives the info of the provided role or role id | !!roleinfo [role] | !!roleinfo @Mod | role
+| Systeminfo | Gives the system information like ram and stuff like that | !!systeminfo | !!systeminfo | system
+| Policy | To see our privacy policy | !!policy | !!policy | privacy policy 
 
 ## Others 
 | Name | Description | Usage | Exampe | Aliases
