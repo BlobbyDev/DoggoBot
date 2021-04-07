@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const emoji = require('../Utils/emoji.json');
 const log = require('../Utils/channels.json');
 const moment = require('moment');
+const config = require('../config.json');
 
 module.exports =  async (client, guild) => {
     
