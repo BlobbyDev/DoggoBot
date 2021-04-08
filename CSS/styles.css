@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+header{
+    background-image: url(../Images/bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: left;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: burlywood;
+    color: black;
+}
+
+ul li.active a{
+    background-color: burlywood;
+    color: black;
+}
+
+.logo img{
+    float: left;
+    width: 13%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color:burlywood;
+    font-size: 100px;
+}
+
+.button{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 1px solid white;
+    padding: 25px 59px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+    size: 90%;
+    text-size-adjust: auto;
+}
+
+.btn:hover{
+    background-color:burlywood;
+    color: black;
+}
+
+.description{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: xx-large;
+    color: rgb(245, 226, 192);
+    text-align: center;
+}
