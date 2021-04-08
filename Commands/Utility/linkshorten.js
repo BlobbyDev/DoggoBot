@@ -6,7 +6,7 @@ module.exports = {
     name: "linkshorten",
     aliases: ["shorten"],
     category: "Utility",
-    description: "Shortens youe URL !!",
+    description: "Shortens your URL to is.gd format !!",
     example: `${config.Prefix}linkshorten https://discord.gg/RWSEj6JrjJ blob_lab`,
 
     run: async (client, message, args) => {
