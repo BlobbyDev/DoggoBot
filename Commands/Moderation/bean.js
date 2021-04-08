@@ -19,9 +19,6 @@ module.exports = {
             msg.delete({ timeout: 20000 })
         });
 
-        if(!doggo.hasPermission(perms))
-        return message.reply(`${emoji.Error} I do not have permission to bean users pls enable permission **\`BAN_MEMBERS\`** for me`)
-
         if (!user)
         return message.reply(`${emoji.Error} Please specify someone you want to bean. **\`${config.Prefix}bean <user> [reason]\`**`)
 
