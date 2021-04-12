@@ -131,6 +131,7 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | Lesbianrate | Gets the lesbianrate of the provided user | !!lesbianrate [user] | !!lesbianrate @Dinav | lr
 | Simprate | Gets the simprate of the provided user | !!simprate [user] | !!simprate @Dinav | simp
 | Emojify | Emojifies you text | !!emojify [text] | !!emojify hi | emoji
+| Petemoji | Pets an emoji that you need (it only pets custom emojis) | !!petemoji [emoji] | !!pet emoji :lol: | emojipet
 
 ## Utility 
 
@@ -170,6 +171,7 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | Spank | Spanks the user | !!spank [user] | !!spank @Dinav | -
 | Kiss | Kisses the user | !!kiss [user] | !!kiss @Dinav | -
 | Wanted | Put the user in the wanted meme | !!wanted [user] | !!wanted @Dinav | -
+| Pet | Pets the avatar of the user | !!pet [user] | !!pet @Dinav | -
 
 ## Animals
 | Name | Description | Usage | Example | Aliases
