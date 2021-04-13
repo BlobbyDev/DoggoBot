@@ -7,6 +7,7 @@ A cool multi purpose discord bot with commands for Fun, Moderation, Utility, Ima
 [![DiscordBanner](https://invidget.switchblade.xyz/RWSEj6JrjJ)](https://discord.gg/RWSEj6JrjJ)
 
 ![LOC](https://tokei.rs/b1/github/Dinav69/DoggoBot?category=code)
+[![Build Status](https://github.com/Dinav69/DoogoBot/workflows/Node.js%20CI/badge.svg?branch=main)](https://github.com/Dinav69/DoggoBot/actions?query=workflow%3A%22Node.js+CI%22)
 [![dependencies](https://img.shields.io/david/Dinav69/DoggoBot)](https://david-dm.org/Dinav69/DoggoBot)
 
 
