@@ -8,7 +8,7 @@ A cool multi purpose discord bot with commands for Fun, Moderation, Utility, Ima
 
 ![LOC](https://tokei.rs/b1/github/Dinav69/DoggoBot?category=code)
 [![dependencies](https://img.shields.io/david/Dinav69/DoggoBot)](https://david-dm.org/Dinav69/DoggoBot)
-[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Dinav69/Doggo/Nodejs%20CI/main?logo=github&style=flat-square)](https://github.com/Dinav69/DoggoBot/actions)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Dinav69/Doggo/Node.js%20CI/main?logo=github&style=flat-square)](https://github.com/Dinav69/DoggoBot/actions)
 
 ## How to setup 
 
