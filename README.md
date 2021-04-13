@@ -8,7 +8,6 @@ A cool multi purpose discord bot with commands for Fun, Moderation, Utility, Ima
 
 ![LOC](https://tokei.rs/b1/github/Dinav69/DoggoBot?category=code)
 [![dependencies](https://img.shields.io/david/Dinav69/DoggoBot)](https://david-dm.org/Dinav69/DoggoBot)
-[![GitHub Release Date](https://img.shields.io/github/release-date/Dinav69/DoggoBot?label=last%20updated)](https://github.com/Dinav69/DoggoBot/releases)
 
 
 ## How to setup 
