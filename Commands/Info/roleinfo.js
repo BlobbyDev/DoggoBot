@@ -48,6 +48,11 @@ module.exports = {
             "PRIORITY_SPEAKER": "Priority Speaker"
         }
 
+        const yesno = {
+            true: '`Yes`',
+            false: '`No`'
+        }
+
         if(!role)
         return message.reply(`${emoji.Error} Provide a role!! \`${config.Prefix}roleinfo [Role]\``)
 
@@ -63,13 +68,17 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
         
         .setTitle(`Role Info !!`)
+        .setThumbnail(message.guild.iconURL({dynamic: true, size: 1024}))
         .addField('Name', role, true)
         .addField('ID', `\`${role.id}\``, true)
         .addField('Position', position, true)
+        .addField('Mentionable', yesno[role.mentionable], true)
+        .addField('Bot Role', yesno[role.managed], true)
+        .addField('Visible', yesno[role.hoist], true)
         .addField('Color', `\`${role.hexColor.toUpperCase()}\``, true)
-        .addField('Amount of Users', `\`${role.members.size}\` Users`, true)
+        .addField('Members', `\`${role.members.size}\` Users`, true)
         .addField('Creation Date', `\`${moment(role.createdAt).format('DD/MMM/YYYY')}\``, true)
-        .addField('Permissions', `\`\`\`\n${finalPermissions.join('\n')}\`\`\``)
+        .addField('Permissions', `\`\`\`diff\n${finalPermissions.join('\n')}\`\`\``)
 
         message.channel.send(embed)
 
