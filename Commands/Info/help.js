@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const emoji = require('../../Utils/emoji.json');
 const config = require('../../config.json');
-const pagination = require('discord.js-pagination');
 
 module.exports = {
 
@@ -13,89 +12,116 @@ module.exports = {
 
     run: async(client, message, args) => {
 
-        const Fun = `\`\`\`${client.commands.filter(cmd => cmd.category === "Fun").array().map(m => m.name.charAt(0).toUpperCase() + m.name.slice(1)).join(", ")}\`\`\``;
-        const Info = `\`\`\`${client.commands.filter(cmd => cmd.category === "Info").array().map(m => m.name.charAt(0).toUpperCase() + m.name.slice(1)).join(", ")}\`\`\``;
-        const Moderation = `\`\`\`${client.commands.filter(cmd => cmd.category === "Moderation").array().map(m => m.name.charAt(0).toUpperCase() + m.name.slice(1)).join(", ")}\`\`\``;
-        const Utility = `\`\`\`${client.commands.filter(cmd => cmd.category === "Utility").array().map(m => m.name.charAt(0).toUpperCase() + m.name.slice(1)).join(", ")}\`\`\``;
-        const Image = `\`\`\`${client.commands.filter(cmd => cmd.category === "Image").array().map(m => m.name.charAt(0).toUpperCase() + m.name.slice(1)).join(", ")}\`\`\``;
-        const Animals = `\`\`\`${client.commands.filter(cmd => cmd.category === "Animals").array().map(m => m.name.charAt(0).toUpperCase() + m.name.slice(1)).join(", ")}\`\`\``;
-        const Others = `\`\`\`${client.commands.filter(cmd => cmd.category === "Others").array().map(m => m.name.charAt(0).toUpperCase() + m.name.slice(1)).join(", ")}\`\`\``;
-        const Misc = `\`\`\`${client.commands.filter(cmd => cmd.category === "Misc").array().map(m => m.name.charAt(0).toUpperCase() + m.name.slice(1)).join(", ")}\`\`\``;
+        const Fun = message.client.commands.filter(x => x.category == 'Fun').map((x) => '`' + x.name + '`').join(', ');
+        const Info = message.client.commands.filter(x => x.category == 'Info').map((x) => '`' + x.name + '`').join(', ');
+        const Moderation = message.client.commands.filter(x => x.category == 'Moderation').map((x) => '`' + x.name + '`').join(', ');
+        const Utility = message.client.commands.filter(x => x.category == 'Utility').map((x) => '`' + x.name + '`').join(', ');
+        const Image = message.client.commands.filter(x => x.category == 'Image').map((x) => '`' + x.name + '`').join(', ');
+        const Animals = message.client.commands.filter(x => x.category == 'Animals').map((x) => '`' + x.name + '`').join(', ');
+        const Others = message.client.commands.filter(x => x.category == 'Others').map((x) => '`' + x.name + '`').join(', ');
+        const Misc = message.client.commands.filter(x => x.category == 'Misc').map((x) => '`' + x.name + '`').join(', ');
 
-        const intro = new Discord.MessageEmbed()
-        .setAuthor(client.user.tag, client.user.displayAvatarURL())
-        .setTitle(`${emoji.Wave} Introduction !!`)
-        .setDescription(`Hey there I'm ${client.user.username} my prefix is **\`${config.Prefix}\`** and **ping me if you forget the prefix**, if you want to get the list of commands then react to emojis that I have already reacted so yeah lets gets started !!`)
-        .addField(`${emoji.Search} For The Detailed Help For a Command`, `\`${config.Prefix}help [command name]\``)
-        .addField('We Have Commands For:', `${emoji.Fun} \`Fun\`\n${emoji.Info} \`Info\`\n${emoji.Moderation} \`Moderation\`\n${emoji.Utility} \`Utility\`\n${emoji.Camera} \`Image\`\n${emoji.DoggoLul} \`Animals\`\n${emoji.Wink} \`Others\`\n${emoji.Misc} \`Misc\``)
-        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
-        .setTimestamp()
+        if (!args[0]) {
+            const intro = new Discord.MessageEmbed()
+            .setThumbnail(client.user.displayAvatarURL({dynamic: true, size: 1024}))
+            .setTitle(`${emoji.Wave} Introduction !!`)
+            .setDescription(`Hey there I'm ${client.user.username} my prefix is **\`${config.Prefix}\`** and **ping me if you forget the prefix**, if you want to get the list of commands then react to emojis that I have already reacted so yeah lets gets started !!`)
+            .addField('Command Modules', `${emoji.Fun} \`${config.Prefix}help fun\`\n${emoji.Info} \`${config.Prefix}help info\`\n${emoji.Moderation} \`${config.Prefix}help mod\`\n${emoji.Utility} \`${config.Prefix}help utility\`\n${emoji.Camera} \`${config.Prefix}help image\`\n${emoji.DoggoLul} \`${config.Prefix}help animals\`\n${emoji.Wink} \`${config.Prefix}help others\`\n${emoji.Misc} \`${config.Prefix}help misc\``)
+            .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .setTimestamp()
 
-        const fun = new Discord.MessageEmbed()
-        .setTitle(`${emoji.Fun} Fun`)
-        .setDescription(Fun)
-        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
-        .setTimestamp()
+            message.channel.send(intro)
+        }
 
-        const info = new Discord.MessageEmbed()
-        .setTitle(`${emoji.Info} Info`)
-        .setDescription(Info)
-        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
-        .setTimestamp()
+        if(args.join(" ").toLowerCase() == 'fun') {
+            const fun = new Discord.MessageEmbed()
+            .setTitle(`${emoji.Fun} Fun Commands`)
+            .setDescription(Fun)
+            .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .setTimestamp()
 
-        const mod = new Discord.MessageEmbed()
-        .setTitle(`${emoji.Moderation} Moderation`)
-        .setDescription(Moderation)
-        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
-        .setTimestamp()
+            message.channel.send(fun)
+        }
 
-        const utility = new Discord.MessageEmbed()
-        .setTitle(`${emoji.Utility} Utility`)
-        .setDescription(Utility)
-        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
-        .setTimestamp()
+        if(args.join(" ").toLowerCase() == 'info') {
+            const info = new Discord.MessageEmbed()
+            .setTitle(`${emoji.Info} Info Commands`)
+            .setDescription(Info)
+            .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .setTimestamp()
 
-        const image = new Discord.MessageEmbed()
-        .setTitle(`${emoji.Camera} Image`)
-        .setDescription(Image)
-        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
-        .setTimestamp()
+            message.channel.send(info)
+        }
+        
+        if(args.join(" ").toLowerCase() == 'mod') {
+            const mod = new Discord.MessageEmbed()
+            .setTitle(`${emoji.Moderation} Moderation Commands`)
+            .setDescription(Moderation)
+            .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .setTimestamp()
 
-        const animals = new Discord.MessageEmbed()
-        .setTitle(`${emoji.DoggoLul} Animals`)
-        .setDescription(Animals)
-        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
-        .setTimestamp()
+            message.channel.send(mod)
+        }
+        
+        if(args.join(" ").toLowerCase() == 'utility') {
+            const utility = new Discord.MessageEmbed()
+            .setTitle(`${emoji.Utility} Image Commands`)
+            .setDescription(Utility)
+            .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .setTimestamp()
 
-        const others = new Discord.MessageEmbed()
-        .setTitle(`${emoji.Wink} Others`)
-        .setDescription(Others)
-        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
-        .setTimestamp()
+            message.channel.send(utility)
+        }
+        
+        if(args.join(" ").toLowerCase() == 'image') {
+            const image = new Discord.MessageEmbed()
+            .setTitle(`${emoji.Camera} Commands`)
+            .setDescription(Image)
+            .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .setTimestamp()
 
-        const misc = new Discord.MessageEmbed()
-        .setTitle(`${emoji.Misc} Misc`)
-        .setDescription(Misc)
-        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
-        .setTimestamp()
+            message.channel.send(image)
+        }
+        
+        if(args.join(" ").toLowerCase() == 'animals') {
+            const animals = new Discord.MessageEmbed()
+            .setTitle(`${emoji.DoggoLul} Animals Commands`)
+            .setDescription(Animals)
+            .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .setTimestamp()
 
-        const pages = [
-            intro,
-            fun,
-            info,
-            mod,
-            utility,
-            image,
-            animals,
-            others,
-            misc
-        ]
+            message.channel.send(animals)
+        }
+        
+        if(args.join(" ").toLowerCase() == 'Other') {
+            const other = new Discord.MessageEmbed()
+            .setTitle(`${emoji.Wink} Other Commands`)
+            .setDescription(Others)
+            .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .setTimestamp()
 
-        const emojiList = ["⏪", "⏩"];
+            message.channel.send(other)
+        }
+        
+        if(args.join(" ").toLowerCase() == 'misc') {
+            const misc = new Discord.MessageEmbed()
+            .setTitle(`${emoji.Misc} Misc Commands`)
+            .setDescription(Misc)
+            .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .setTimestamp()
 
-        const timeout = '7200000 '
-
-        if(!args[0]) return pagination(message, pages, emojiList, timeout)
+            message.channel.send(misc)
+        }
+        
 
         let command = client.commands.get(args[0].toLowerCase()) || client.commands.get(client.aliases.get(args[0].toLowerCase()));
     
@@ -116,3 +142,4 @@ module.exports = {
     }
         
 }
+
