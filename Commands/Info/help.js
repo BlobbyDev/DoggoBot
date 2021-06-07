@@ -28,7 +28,7 @@ module.exports = {
             .setDescription(`Hey there I'm ${client.user.username} my prefix is **\`${config.Prefix}\`** and **ping me if you forget the prefix**, if you want to get the list of commands then react to emojis that I have already reacted so yeah lets gets started !!`)
             .addField('Command Modules', `${emoji.Fun} \`${config.Prefix}help fun\`\n${emoji.Info} \`${config.Prefix}help info\`\n${emoji.Moderation} \`${config.Prefix}help mod\`\n${emoji.Utility} \`${config.Prefix}help utility\`\n${emoji.Camera} \`${config.Prefix}help image\`\n${emoji.DoggoLul} \`${config.Prefix}help animals\`\n${emoji.Wink} \`${config.Prefix}help others\`\n${emoji.Misc} \`${config.Prefix}help misc\``)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
-            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
             .setTimestamp()
 
             message.channel.send(intro)
@@ -40,7 +40,7 @@ module.exports = {
             .setDescription('These Commands are the fun commands which can be used by all the server members and also can play certain games')
             .addField('Commands', Fun)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
-            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
             .setTimestamp()
 
             message.channel.send(fun)
@@ -52,7 +52,7 @@ module.exports = {
             .setDescription('These are the info commands that can gives the informations about the various things and also this can be used by all the server member too')
             .addField('Commands', Info)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
-            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
             .setTimestamp()
 
             message.channel.send(info)
@@ -64,7 +64,7 @@ module.exports = {
             .setDescription('These are the moderation command which can be used by the mods, server managers and admins only')
             .addField('Commands', Moderation)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
-            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
             .setTimestamp()
 
             message.channel.send(mod)
@@ -76,7 +76,7 @@ module.exports = {
             .setDescription('These are the utility command which can used by all the server memebers and also this includes the commands that need api call so yeah enjoy these commands')
             .addField('Commands', Utility)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
-            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
             .setTimestamp()
 
             message.channel.send(utility)
@@ -88,7 +88,7 @@ module.exports = {
             .setDescription('These commands are the image manipulation commands in the bot which is used for fun mainly try these out :wink:')
             .addField('Commands', Image)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
-            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
             .setTimestamp()
 
             message.channel.send(image)
@@ -100,7 +100,7 @@ module.exports = {
             .setDescription('These commands are the animal related commands which includes the posting random images of the animals provided and also random animal facts and if you are animal lover try these out :wink:')
             .addField('Commands', Animals)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
-            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
             .setTimestamp()
 
             message.channel.send(animals)
@@ -112,7 +112,7 @@ module.exports = {
             .setDescription('These are the casual commands that aren\'t that is present in all the bots which like giving out the extra infos about us')
             .addField('Commands', Others)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
-            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
             .setTimestamp()
 
             message.channel.send(other)
@@ -124,7 +124,7 @@ module.exports = {
             .setDescription('These commands are used to contact the us about you issues, feedbacks and stuff like that so yeah ||joining the support server is better tho to get direct support||')
             .addField('Commands', Misc)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
-            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+            .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
             .setTimestamp()
 
             message.channel.send(misc)
@@ -143,7 +143,7 @@ module.exports = {
         .addField('Category', `\`\`\`${command.category}\`\`\``, true)
         .addField('Aliases', `\`\`\`${command.aliases.length < 1 ? 'None' : command.aliases.join(', ')}\`\`\``, true)
         .addField('Example', `\`\`\`${command.example}\`\`\``, true)
-        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
+        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github})`)
         .setTimestamp()
 
         message.channel.send(embed)
