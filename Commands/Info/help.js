@@ -36,8 +36,9 @@ module.exports = {
 
         if(args.join(" ").toLowerCase() == 'fun') {
             const fun = new Discord.MessageEmbed()
-            .setTitle(`${emoji.Fun} Fun Commands`)
-            .setDescription(Fun)
+            .setTitle(`${emoji.Fun} Help Fun`)
+            .setDescription('These Commands are the fun commands which can be used by all the server members and also can play certain games')
+            .addField('Commands', Fun)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
             .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
             .setTimestamp()
@@ -47,8 +48,9 @@ module.exports = {
 
         if(args.join(" ").toLowerCase() == 'info') {
             const info = new Discord.MessageEmbed()
-            .setTitle(`${emoji.Info} Info Commands`)
-            .setDescription(Info)
+            .setTitle(`${emoji.Info} Help Info`)
+            .setDescription('These are the info commands that can gives the informations about the various things and also this can be used by all the server member too')
+            .addField('Commands', Info)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
             .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
             .setTimestamp()
@@ -58,8 +60,9 @@ module.exports = {
         
         if(args.join(" ").toLowerCase() == 'mod') {
             const mod = new Discord.MessageEmbed()
-            .setTitle(`${emoji.Moderation} Moderation Commands`)
-            .setDescription(Moderation)
+            .setTitle(`${emoji.Moderation} Help Mod`)
+            .setDescription('These are the moderation command which can be used by the mods, server managers and admins only')
+            .addField('Commands', Moderation)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
             .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
             .setTimestamp()
@@ -69,8 +72,9 @@ module.exports = {
         
         if(args.join(" ").toLowerCase() == 'utility') {
             const utility = new Discord.MessageEmbed()
-            .setTitle(`${emoji.Utility} Image Commands`)
-            .setDescription(Utility)
+            .setTitle(`${emoji.Utility} Help Utility`)
+            .setDescription('These are the utility command which can used by all the server memebers and also this includes the commands that need api call so yeah enjoy these commands')
+            .addField('Commands', Utility)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
             .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
             .setTimestamp()
@@ -80,8 +84,9 @@ module.exports = {
         
         if(args.join(" ").toLowerCase() == 'image') {
             const image = new Discord.MessageEmbed()
-            .setTitle(`${emoji.Camera} Commands`)
-            .setDescription(Image)
+            .setTitle(`${emoji.Camera} Help Image`)
+            .setDescription('These commands are the image manipulation commands in the bot which is used for fun mainly try these out :wink:')
+            .addField('Commands', Image)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
             .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
             .setTimestamp()
@@ -91,8 +96,9 @@ module.exports = {
         
         if(args.join(" ").toLowerCase() == 'animals') {
             const animals = new Discord.MessageEmbed()
-            .setTitle(`${emoji.DoggoLul} Animals Commands`)
-            .setDescription(Animals)
+            .setTitle(`${emoji.DoggoLul} Help Animals`)
+            .setDescription('These commands are the animal related commands which includes the posting random images of the animals provided and also random animal facts and if you are animals lover try these out :wink:')
+            .addField('Commands', Animals)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
             .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
             .setTimestamp()
@@ -100,10 +106,11 @@ module.exports = {
             message.channel.send(animals)
         }
         
-        if(args.join(" ").toLowerCase() == 'Other') {
+        if(args.join(" ").toLowerCase() == 'others') {
             const other = new Discord.MessageEmbed()
-            .setTitle(`${emoji.Wink} Other Commands`)
-            .setDescription(Others)
+            .setTitle(`${emoji.Wink} Help Others`)
+            .setDescription('These are the casual commands that aren\'t that is present in all the bots which like giving out the extra infos about us')
+            .addField('Commands', Others)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
             .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
             .setTimestamp()
@@ -113,8 +120,9 @@ module.exports = {
         
         if(args.join(" ").toLowerCase() == 'misc') {
             const misc = new Discord.MessageEmbed()
-            .setTitle(`${emoji.Misc} Misc Commands`)
-            .setDescription(Misc)
+            .setTitle(`${emoji.Misc} Help Misc`)
+            .setDescription('These commands are used to contact the us about you issues, feedbacks and stuff like that so yeah ||joining the support server is better tho to get direct support||')
+            .addField('Commands', Misc)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
             .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
             .setTimestamp()
@@ -128,13 +136,14 @@ module.exports = {
         if(!command) return;
 
         const embed = new Discord.MessageEmbed()
-
-        .setTitle('Command Info')
-        .addField('Name', `\`\`\`${command.name}\`\`\``, true)
-        .addField('Category', `\`\`\`${command.category}\`\`\``, true)
-        .addField('Aliases', `\`\`\`${command.aliases ? command.aliases.join(", ") : "-"}\`\`\``, true)
-        .addField('Example', `\`\`\`${command.example}\`\`\``, true)
+        .setThumbnail(client.user.displayAvatarURL({dynamic: true, size: 1024}))
+        .setTitle(':mag: Detailed Help')
+        .addField('Command Name', `\`\`\`${command.name}\`\`\``, true)
         .addField('Description', `\`\`\`${command.description}\`\`\``)
+        .addField('Category', `\`\`\`${command.category}\`\`\``, true)
+        .addField('Aliases', `\`\`\`${command.aliases.length < 1 ? 'None' : command.aliases.join(', ')}\`\`\``, true)
+        .addField('Example', `\`\`\`${command.example}\`\`\``, true)
+        .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
         .setTimestamp()
 
         message.channel.send(embed)
@@ -142,4 +151,3 @@ module.exports = {
     }
         
 }
-
