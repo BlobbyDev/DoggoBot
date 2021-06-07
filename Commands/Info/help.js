@@ -97,7 +97,7 @@ module.exports = {
         if(args.join(" ").toLowerCase() == 'animals') {
             const animals = new Discord.MessageEmbed()
             .setTitle(`${emoji.DoggoLul} Help Animals`)
-            .setDescription('These commands are the animal related commands which includes the posting random images of the animals provided and also random animal facts and if you are animals lover try these out :wink:')
+            .setDescription('These commands are the animal related commands which includes the posting random images of the animals provided and also random animal facts and if you are animal lover try these out :wink:')
             .addField('Commands', Animals)
             .addField(':notepad_spiral: Note', `For detailed help in a command type:\n\`${config.Prefix}help [Command Name]\``)
             .addField(`${emoji.Link} Useful Links`, `[Add Me](${config.Invite}) | [Join Server](${config.Server}) | [Source Code](${config.Github}) | [Vote](https://top.gg/bot/818092139496996864/vote)`)
