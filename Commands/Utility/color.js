@@ -6,7 +6,7 @@ const DIG = require("discord-image-generation");
 module.exports = {
     name: "color",
     aliases: ['colour'],
-    category: "Image",
+    category: "Utility",
     description: "Gives a colour that you have provided",
     example: `${config.Prefix}colour #FF0000`,
 
