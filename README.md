@@ -107,15 +107,15 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 
 | Name | Description | Usgae | Example | Aliases
 |----|----|----|----|----|
-| Ban | Bans a user from the server | !!ban [Mention or ID] [Reason] | !!ban @Dinav Being too cool | -
-| Kick | Kicks a user from the server | !!kick [Mention or ID] [Reason] | !!kick @Dinav Rude | -
+| Ban | Bans a user from the server | !!ban [Mention or ID] [Reason] | !!ban @Blobby Being too cool | -
+| Kick | Kicks a user from the server | !!kick [Mention or ID] [Reason] | !!kick @Blobby Rude | -
 | Forceban | Bans a user outside the guild and prevent from joining | !!forceban [User ID] [Reason] | !!forceban 484892489332430 nothing | hackban, ipban
 | Slowmode | Sets the slowmode to your own wish | !!slowmode [number] | !!slowmode 69 | slow
 | Unban | Unbans the user from the banned list | !!unban [User ID] [Reason] | !!unban 43894434893849 Nothing | -
 | Clear | Clear the provided amount of messages but the amount should not go above 100 | !!clear [Anount] | !!clear 69 | -
-| Addrole | Adds role to a user with the provided role mention or ID | !!addrole [User] [Role] | !!addrole @Dinav @Mod | giverole, ar
-| Removerole | Removes role from a user with the provided role mention or ID | !!removerole [User] [Role] | !!removerole @Dinav @Mod | takerole
-| Nickname | Changes the nickname of the user with the prvided nickname | !!nickname [User] [nickname but if the nickname has space in between use ""] | !!nickname @Dinav Blob | nick 
+| Addrole | Adds role to a user with the provided role mention or ID | !!addrole [User] [Role] | !!addrole @Blobby @Mod | giverole, ar
+| Removerole | Removes role from a user with the provided role mention or ID | !!removerole [User] [Role] | !!removerole @Blobby @Mod | takerole
+| Nickname | Changes the nickname of the user with the prvided nickname | !!nickname [User] [nickname but if the nickname has space in between use ""] | !!nickname @DBlobby Blob | nick 
 
 ## Fun
 
@@ -123,15 +123,15 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 |----|----|----|----|----|
 | 8ball | Bot answers the question you ask for | !!8ball [Question] | !!8ball Is Doggo cool ? | -
 | Ascii | Converts texts to ascii format | !!ascii [word] | !!ascii HI | -
-| PP | Welp you know that command no need to explain | !!pp [Mention or ID] | !!pp @Dinav | -
+| PP | Welp you know that command no need to explain | !!pp [Mention or ID] | !!pp @Blobby | -
 | Rps | Plays Rock paper scissor with the bot | !!rps [Rock / Paper / Scissor] | !!rps rock | -
 | Coinflip | Flips a coin for you | !!coinflip | !!coinflip | toss
 | Roll | Rolls die for you | !!roll | !!roll | dice 
 | Trumptweet | Converts you text to trump's tweet lol | !!trumptweet [message] | !!trumptweet Hi | tt
-| Tictactoe | To play tic tac toe with the mentioned user | !!tictactoe [user] | !!tictactoe @Dinav | ttt
-| Gayrate | Gets in the gayrate of the provided user | !!gayrate [user] | !!gayrate @Dinav | -
+| Tictactoe | To play tic tac toe with the mentioned user | !!tictactoe [user] | !!tictactoe @Blobby | ttt
+| Gayrate | Gets in the gayrate of the provided user | !!gayrate [user] | !!gayrate @Blobby | -
 | Lesbianrate | Gets the lesbianrate of the provided user | !!lesbianrate [user] | !!lesbianrate @Dinav | lr
-| Simprate | Gets the simprate of the provided user | !!simprate [user] | !!simprate @Dinav | simp
+| Simprate | Gets the simprate of the provided user | !!simprate [user] | !!simprate @Blobby | simp
 | Emojify | Emojifies you text | !!emojify [text] | !!emojify hi | emoji
 | Petemoji | Pets an emoji that you need (it only pets custom emojis) | !!petemoji [emoji] | !!pet emoji :lol: | emojipet
 
@@ -139,7 +139,7 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 
 | Name | Description | Usage | Example | Aliases 
 |----|----|----|----|----|
-| Avatar | Give the avatar of the mentioned user or the ID provided | !!avatar [Mention or ID] | !!avatar @Dinav | av, pfp
+| Avatar | Give the avatar of the mentioned user or the ID provided | !!avatar [Mention or ID] | !!avatar @Blobby | av, pfp
 | Covid | Gives the covid 19 status of a country | !!covid [country name] | !!covid Canada | corona, rona
 | Say | Bot repeats whatever you say | !!say [Something] | !!say HI | tell 
 | Urban | Give the meaning of a word or a phrase using urban dictionary | !!urban [Word] | !!urban cool | -
@@ -159,21 +159,21 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 |----|----|----|----|----|
 | Meme | Sends a random meme from reddit | !!meme | !!meme | -
 | Waifu | Send a random waifu pic | !!waifu | !!waify | -
-| Gay | Send the provided user's avatar in gay theme | !!gay [user] | !!gay @Dinav | -
-| Invert | Send the provided user's avatar in inverted filter | !!invert [user] | !!invert @Dinav | -
-| Blur | Send the provided user's avatar in blur filter | !!blur [user] | !!blur @Dinav | -
-| Criminal | Send the provided user's avatar in news headlines lol | !!criminal [user] | !!criminal @Dinav | -
-| Affect | Send the user's avatar in affect my baby meme | !!affect [user] | !!affect @Dinav | -
-| Stonk | Send the user's avatar in stonks meme | !!stonk [user] | !!stonk @Dinav | -
-| Nostonk | Send the user's avatar in no stonks meme | !!nostonk [user] | !!nostonk @Dinav | notstonk
-| Trigger | Send the user's avatar in triggered !! | !!trigger [user] | !!trigger @Dinav | triggered 
-| Jail | Send the user's avatar in jail | !!jail [user] | !!jail @Dinav | -
-| Bonk | Bonks the user | !!bonk [user] | !!bonk @Dinav | -
-| Slap | Slaps the user | !!slap [user] | !!slap @Dinav | -
-| Spank | Spanks the user | !!spank [user] | !!spank @Dinav | -
-| Kiss | Kisses the user | !!kiss [user] | !!kiss @Dinav | -
-| Wanted | Put the user in the wanted meme | !!wanted [user] | !!wanted @Dinav | -
-| Pet | Pets the avatar of the user | !!pet [user] | !!pet @Dinav | -
+| Gay | Send the provided user's avatar in gay theme | !!gay [user] | !!gay @Blobby | -
+| Invert | Send the provided user's avatar in inverted filter | !!invert [user] | !!invert @Blobby | -
+| Blur | Send the provided user's avatar in blur filter | !!blur [user] | !!blur @Blobby | -
+| Criminal | Send the provided user's avatar in news headlines lol | !!criminal [user] | !!criminal @Blobby | -
+| Affect | Send the user's avatar in affect my baby meme | !!affect [user] | !!affect @Blobby | -
+| Stonk | Send the user's avatar in stonks meme | !!stonk [user] | !!stonk @Blobby | -
+| Nostonk | Send the user's avatar in no stonks meme | !!nostonk [user] | !!nostonk @Blobby | notstonk
+| Trigger | Send the user's avatar in triggered !! | !!trigger [user] | !!trigger @DBlobby | triggered 
+| Jail | Send the user's avatar in jail | !!jail [user] | !!jail @Blobby | -
+| Bonk | Bonks the user | !!bonk [user] | !!bonk @Blobby | -
+| Slap | Slaps the user | !!slap [user] | !!slap @Blobby | -
+| Spank | Spanks the user | !!spank [user] | !!spank @Blobby | -
+| Kiss | Kisses the user | !!kiss [user] | !!kiss @Blobby | -
+| Wanted | Put the user in the wanted meme | !!wanted [user] | !!wanted @Blobby | -
+| Pet | Pets the avatar of the user | !!pet [user] | !!pet @Blobby | -
 
 ## Animals
 | Name | Description | Usage | Example | Aliases
@@ -200,7 +200,7 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | Help | Gives all the commands I have also the detailed explanation of a command | !!help or !!help [command name] | !!help meme | h, assist 
 | Serverinfo | Gives the server information of the messaged server | !!serverinfo | !!serverinfo | si, server
 | Botinfo | Gives the information of the bot | !!botinfo | !!botinfo | bot, info, stats
-| Whois | Gives the information of the user which is mentioned or provided ID | !!userinfo [Mention or ID] | !!userinfo @Dinav | ui, userinfo 
+| Whois | Gives the information of the user which is mentioned or provided ID | !!userinfo [Mention or ID] | !!userinfo @Blobby | ui, userinfo 
 | Ping | Gives the latency and API latency of the bot | !!ping | !!ping | ms, latency
 | Uptime | Gives the uptime of the bot | !!uptime | !!uptime | ut
 | Channelinfo | Gives the info of the provided channel | !!channel info [channel] | !!channelinfo #general | channel
