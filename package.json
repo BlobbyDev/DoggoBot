@@ -56,5 +56,6 @@
     "twemoji-parser": "^13.0.0",
     "weather-js": "^2.0.0",
     "youtube-search": "^1.1.6"
+    "srod-v2": "^1.0.2"
   }
 }
