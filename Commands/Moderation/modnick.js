@@ -1,11 +1,11 @@
 const { Client, Message, MessageEmbed } = require("discord.js");
-const db= require("quick.db")
+const config = require('../../config.json');
 module.exports = {
   name: "modnick",
   aliases: ["moderate-nick"],
-  category:'moderation',
+  category:'Moderation',
   description: "Change unmentionable name to something mentionable!",
-  usage: `%modnick [@User]`,
+  usage: `${config.Prefix}modnick [@User]`,
   timeout: 2000,
   userPermissions: ["MANAGE_NICKNAMES"],
   botPermissions: ["MANAGE_NICKNAMES"],
