@@ -28,6 +28,7 @@ module.exports = {
             .addField("**Moderation**", "Mod Nick")
             .addField("**Moderated User**", member.user.username)
             .addField("**Moderated By**", message.author.username)
+            .addField("**New Nickname*",(`Moderated Nickname ${randomNick}`))
             .addField("**Date**", message.createdAt.toLocaleString())
             .setTimestamp();
 
