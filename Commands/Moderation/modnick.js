@@ -20,23 +20,17 @@ module.exports = {
       Math.floor(Math.random() * randomText.length) +
       Math.floor(Math.random() * 72323);
       member.setNickname(`Moderated Nickname ${randomNick}`);
-      let channel = db.fetch(`modlog_${message.guild.id}`)
-        if (!channel) return;
-
-        const sembed = new MessageEmbed()
+           const sembed = new MessageEmbed()
             .setAuthor(`${message.guild.name} Modlogs`, message.guild.iconURL())
             .setColor("#ff0000")
             .setThumbnail(member.user.displayAvatarURL({ dynamic: true }))
             .setFooter(message.guild.name, message.guild.iconURL())
             .addField("**Moderation**", "Mod Nick")
-            .addField("**Moderated User*", member.user.username)
+            .addField("**Moderated User**", member.user.username)
             .addField("**Moderated By**", message.author.username)
-            .addField("**Nick Changed To**", args[1])
             .addField("**Date**", message.createdAt.toLocaleString())
             .setTimestamp();
 
-            var sChannel = message.guild.channels.cache.get(channel)
-            if (!sChannel) return;
-            sChannel.send(sembed)
+           message.channel.send(sembed)
     }
   }
