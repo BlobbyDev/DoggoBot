@@ -1,11 +1,11 @@
 const { Client, Message, MessageEmbed } = require("discord.js");
-const db= require("quick.db")
+const config = require('../../config.json');
 module.exports = {
   name: "modnick",
   aliases: ["moderate-nick"],
-  category:'moderation',
+  category:'Moderation',
   description: "Change unmentionable name to something mentionable!",
-  usage: `%modnick [@User]`,
+  usage: `${config.Prefix}modnick [@User]`,
   timeout: 2000,
   userPermissions: ["MANAGE_NICKNAMES"],
   botPermissions: ["MANAGE_NICKNAMES"],
@@ -28,6 +28,7 @@ module.exports = {
             .addField("**Moderation**", "Mod Nick")
             .addField("**Moderated User**", member.user.username)
             .addField("**Moderated By**", message.author.username)
+            .addField("**New Nickname*",(`Moderated Nickname ${randomNick}`))
             .addField("**Date**", message.createdAt.toLocaleString())
             .setTimestamp();
 
