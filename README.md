@@ -126,7 +126,7 @@ If you need to change the emojis go to `emoji.json` and change it I recommend th
 | PP | Welp you know that command no need to explain | !!pp [Mention or ID] | !!pp @Blobby | -
 | Rps | Plays Rock paper scissor with the bot | !!rps [Rock / Paper / Scissor] | !!rps rock | -
 | Coinflip | Flips a coin for you | !!coinflip | !!coinflip | toss
-| Roll | Rolls die for you | !!roll | !!roll | dice 
+| Roll | Rolls a dice for you | !!roll | !!roll | dice 
 | Trumptweet | Converts you text to trump's tweet lol | !!trumptweet [message] | !!trumptweet Hi | tt
 | Tictactoe | To play tic tac toe with the mentioned user | !!tictactoe [user] | !!tictactoe @Blobby | ttt
 | Gayrate | Gets in the gayrate of the provided user | !!gayrate [user] | !!gayrate @Blobby | -
