@@ -2,6 +2,8 @@
 
 A cool multi purpose discord bot with commands for Fun, Moderation, Utility, Image and Animals also with owner only commands !! and also make sure you `Star` the repo too :D
 
+For Discord.js `v14` bot check out [Blob](https://blobbot.me), for source code [click here](https://github.com/BlobbyDev/BlobBot) 
+
 [Add It](https://discord.com/api/oauth2/authorize?client_id=818092139496996864&permissions=8&scope=bot) | [Join Our Discord](https://discord.gg/RWSEj6JrjJ) | [Vote](https://top.gg/bot/818092139496996864/vote)
 
 [![DiscordBanner](https://invidget.switchblade.xyz/RWSEj6JrjJ)](https://discord.gg/RWSEj6JrjJ)
